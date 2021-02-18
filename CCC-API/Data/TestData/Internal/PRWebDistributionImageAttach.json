@@ -1,0 +1,56 @@
+﻿{
+  "PRWebDistributionData": {
+    "SubscriptionId": "",
+    "DistributionName": "API Test Distribution",
+    "Headline": "Now, this is a story all about how My life got flipped-turned upside down",
+    "Summary": "And I would like to take a minute Just sit right there and think what to say to get more that 80 chars.",
+    "Body": "In west Philadelphia born and raised On the playground was where I spent most of my days Chillin out maxin relaxin all cool And all shootin some b-ball outside of the school When a couple of guys who were up to no good Started making trouble in my neighborhood I got in one little fight and my mom got scared She said Youre movin with your auntie and uncle in Bel Air",
+    "ReleaseDateTimezone": "Central Standard Time",
+    "ReleaseDate": "",
+    "Cities": [
+      {
+        "Id": "720",
+        "Name": "Baltimore,MD"
+      }
+    ],
+    "User": "integrationTest",
+    "UserPhone": "+1(54)1234567",
+    "UserEmail": "test@testmail.com",
+    "Topics": [
+        {
+          "Id": "13",
+          "Name": "Arts & Entertainment"
+        }
+      ],
+    "MediaDigests": [ "HealthAndMedical", "TravelAndHospitality" ],
+    "ContactName": "contactName",
+    "ContactPhone": "7081231234",
+    "ContactEmail": "contactEmail@contactEmail.com",
+    "ContactCompany": "contactCompany",
+    "ContactWebsite": "www.contactCompanyWebsite.com",
+    "NewsImage": {
+      "AssetId": "43742",
+      "FileName": "world.JPG",
+      "FileSize": "163282",
+      "FilePath": "world.JPG",
+      "AltText": "AltText",
+      "Caption": "Caption", 
+      "Description": "Description"
+    },
+    "AdditionalAttachments": [
+      {
+        "AssetId": "43742",
+        "FileName": "world.JPG",
+        "FileSize": "163282",
+        "FilePath": "world.JPG",
+        "AltText": "AltText",
+        "Caption": "Caption", 
+        "Description": "Description"
+      }
+    ],
+    "VideoURL": "",
+    "CityState": "Seattle, WA",
+    "IndustryOutletCategories": [],
+    "IsCreatedInC3": "true"
+  }
+}

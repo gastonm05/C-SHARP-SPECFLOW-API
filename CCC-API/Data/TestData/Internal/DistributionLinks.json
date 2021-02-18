@@ -1,0 +1,74 @@
+﻿{
+	"Links": [
+		{
+			"Href": "https://msdn.microsoft.com/en-us",
+			"Name": "MS Build, design, develop",
+			"ClickCount": 0
+		},
+		{
+			"Href": "https://ja.wikipedia.org/wiki/C_Sharp",
+			"Name": "C Sharp - Wikipedia - https://ja.wikipedia.org/wiki/C_Sharp",
+			"ClickCount": 0
+		},
+		{
+			"Href": "https://www.w3schools.com/html/html_links.asp",
+			"Name": "https://www.w3schools.com/html/html_links.asp",
+			"ClickCount": 0
+		},
+		{
+			"Href": "http://en.wikipedia.org/wiki/Main_Page",
+			"Name": "Welcome to Wikipedia",
+			"ClickCount": 0
+		},
+		{
+			"Href": "https://gitlab.com/gitlab-org",
+			"Name": "Open source software to collaborate on code",
+			"ClickCount": 0
+		},
+		{
+			"Href": "https://www.sciencedaily.com/releases/2017/07/170703121025.htm",
+			"Name": "Greening the city: A measurement for a mindful environment",
+			"ClickCount": 0
+		},
+		{
+			"Href": "https://github.com/johngrib/vim-game-code-break",
+			"Name": "VimGameCodeBreak",
+			"ClickCount": 0
+		},
+		{
+			"Href": "http://dpzmick.com/2017/05/25/outsmarting-the-compiler/",
+			"Name": "Outsmarting the compiler",
+			"ClickCount": 0
+		},
+		{
+			"Href": "https://stackoverflow.com/questions/23346853/random-sentence-generator-listbox-output",
+			"Name": "Random Sentence Generator / Listbox output",
+			"ClickCount": 0
+		},
+		{
+			"Href": "https://www.brainyquote.com/quotes/topics/topic_inspirational.html",
+			"Name": "The best preparation for tomorrow is doing your best today.",
+			"ClickCount": 0
+		},
+		{
+			"Href": "https://opensource.com/life/15/12/why-open-source",
+			"Name": "6 motivations for consuming or publishing open source software",
+			"ClickCount": 0
+		},
+		{
+			"Href": "https://github.com/MostlyAdequate/mostly-adequate-guide",
+			"Name": "Mostly adequate guide to FP (in javascript)",
+			"ClickCount": 0
+		},
+		{
+			"Href": "https://msdn.microsoft.com/en-us/library/aa288463(v=vs.71).aspx",
+			"Name": "The following examples show different ways of writing the C# Hello World program.",
+			"ClickCount": 0
+		},
+		{
+			"Href": "http://www.lipsum.com/",
+			"Name": "What is Lorem Ipsum?",
+			"ClickCount": 0
+		}
+	]
+}

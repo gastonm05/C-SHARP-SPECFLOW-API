@@ -1,0 +1,243 @@
+﻿[{
+		"_comment": "NB: This is distribution json array with diff types of recipients. Please note: Added fields DistId. and Type",
+		"PageSize": 50,
+		"Offset": 0,
+		"DistId": 47885,
+		"Type": "contacts",
+		"TotalCount": 3,
+		"ItemCount": 3,
+		"Items": [{
+		"EntityId": 8706146,
+		"Type": 0,
+		"Name": "Nacho Ignacio Martin Flores",
+		"EmailAddress": null,
+		"Info1": "Mr",
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": {
+			"Details": "media/contacts/{EntityId}",
+			"ParentDetails": null
+		}
+	}, {
+		"EntityId": 8723525,
+		"Type": 0,
+		"Name": "Ignacio Media Contact Nacho",
+		"EmailAddress": null,
+		"Info1": "",
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": {
+			"Details": "media/contacts/{EntityId}",
+			"ParentDetails": null
+		}
+	}, {
+		"EntityId": 8309191,
+		"Type": 0,
+		"Name": "Oleh Ilnytskyi Sr naqvi",
+		"EmailAddress": null,
+		"Info1": "Mr",
+		"Info2": "- Manx Radio",
+		"ParentEntityId": 1845202,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": {
+			"Details": "media/contacts/{EntityId}",
+			"ParentDetails": "media/outlets/{ParentEntityId}"
+		}
+	}],
+	"_links": {
+		"prev": null,
+		"next": null
+	},
+	"_meta": {}
+},
+	{
+		"PageSize": 50,
+		"Offset": 0,
+		"TotalCount": 1,
+		"ItemCount": 1,
+		"DistId": 47885,
+		"Type": "outlets",
+		"Items": [{
+		"EntityId": 2994025,
+		"Type": 0,
+		"Name": "NachoReleasedOutlet",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": {
+			"Details": "media/outlets/{EntityId}",
+			"ParentDetails": null
+		}
+	}],
+	"_links": {
+		"prev": null,
+		"next": null
+	},
+	"_meta": {}
+},
+	{
+		"PageSize": 50,
+		"Offset": 0,
+		"DistId": 47885,
+		"Type": "individuals",
+		"TotalCount": 4,
+		"ItemCount": 4,
+		"Items": [{
+		"EntityId": 60847,
+		"Type": 0,
+		"Name": "indi Indivvv",
+		"EmailAddress": "oleh.ilnytskyi+indivv@cision.com",
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}, {
+		"EntityId": 60823,
+		"Type": 0,
+		"Name": "Trains Sir Lorens",
+		"EmailAddress": "oleh.ilnytskyi@cision.com",
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}, {
+		"EntityId": 60810,
+		"Type": 0,
+		"Name": "Ariel Tester",
+		"EmailAddress": "samar.naqvi@cision.com",
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}, {
+		"EntityId": 60811,
+		"Type": 0,
+		"Name": "Tekiyu Tester",
+		"EmailAddress": "tekiyu.ahmed@cision.com",
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}],
+	"_links": {
+		"prev": null,
+		"next": null
+	},
+	"_meta": {}
+},
+	{
+		"PageSize": 50,
+		"Offset": 0,
+		"DistId": 47885,
+		"Type": "organizations",
+		"TotalCount": 5,
+		"ItemCount": 5,
+		"Items": [{
+		"EntityId": 27205,
+		"Type": 0,
+		"Name": "assa",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}, {
+		"EntityId": 27197,
+		"Type": 0,
+		"Name": "gork",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}, {
+		"EntityId": 27213,
+		"Type": 0,
+		"Name": "Ignacio Released Organization",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": true,
+		"HasClickedLink": true,
+		"ClickedLinks": [{
+			"Href": "http://www.google.com",
+			"Name": "www.google.com",
+			"ClickCount": 1
+		}],
+		"_links": null
+	}, {
+		"EntityId": 27200,
+		"Type": 0,
+		"Name": "newone",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}, {
+		"EntityId": 27209,
+		"Type": 0,
+		"Name": "neworga",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}],
+	"_links": {
+		"prev": null,
+		"next": null
+	},
+	"_meta": {}
+}
+]

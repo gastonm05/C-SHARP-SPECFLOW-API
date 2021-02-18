@@ -1,0 +1,42 @@
+﻿{
+  "PRWebDistributionDataWithVideo": {
+    "SubscriptionId": "",
+    "DistributionName": "API Test Distribution",
+    "Headline": "Now, this is a story all about how My life got flipped-turned upside down",
+    "Summary": "And I would like to take a minute Just sit right there and think what to say to get more that 80 chars.",
+    "Body": "I will tell you how I became the prince of a town called Bel Air",
+    "ReleaseDateTimezone": "Central Standard Time",
+    "ReleaseDate": "",
+    "Cities": [
+      {
+        "Id": "720",
+        "Name": "Baltimore,MD"
+      }
+    ],
+    "User": "integrationTest",
+    "UserPhone": "+1(54)1234567",
+    "UserEmail": "test@testmail.com",
+    "Topics": [
+        {
+          "Id": "13",
+          "Name": "Arts & Entertainment"
+        }
+      ],
+    "MediaDigests": [ "HealthAndMedical", "TravelAndHospitality" ],
+    "ContactName": "contactName",
+    "ContactPhone": "7081231234",
+    "ContactEmail": "contactEmail@contactEmail.com",
+    "ContactCompany": "contactCompany",
+    "ContactWebsite": "www.contactCompanyWebsite.com",
+    "NewsImage": {
+      "AssetId": "",
+      "FileName": "",
+      "FileSize": "",
+      "FilePath": ""
+    },
+    "VideoURL": "https://youtube.com/watch?v=lvoz-fSze8s",
+    "CityState": "Seattle, WA",
+    "IndustryOutletCategories": [],
+    "IsCreatedInC3": "true"
+  }
+}

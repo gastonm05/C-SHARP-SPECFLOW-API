@@ -1,0 +1,104 @@
+﻿[
+  {
+    "Id": 3547,
+    "Name": "Shannon Text",
+    "Edition": "Text UDF",
+    "Type": "String"
+  },
+  {
+    "Id": 3548,
+    "Name": "Shannon Text Validated",
+    "Edition": "Validated Text UDF",
+    "Type": "String",
+    "AllowedValues": [
+      {
+        "Id": 3231,
+        "Value": "List 1"
+      },
+      {
+        "Id": 3322,
+        "Value": "Value Four"
+      },
+      {
+        "Id": 3321,
+        "Value": "Value Three"
+      },
+      {
+        "Id": 3320,
+        "Value": "Value Two"
+      }
+    ]
+  },
+  {
+    "Id": 3549,
+    "Name": "Shannon Pick List",
+    "Edition": "Multi Select UDF",
+    "Type": "String",
+    "AllowedValues": [
+      {
+        "Id": 3232,
+        "Value": "List 1"
+      },
+      {
+        "Id": 3241,
+        "Value": "List 10"
+      },
+      {
+        "Id": 3233,
+        "Value": "List 2"
+      },
+      {
+        "Id": 3234,
+        "Value": "List 3"
+      },
+      {
+        "Id": 3235,
+        "Value": "List 4"
+      },
+      {
+        "Id": 3236,
+        "Value": "List 5"
+      },
+      {
+        "Id": 3237,
+        "Value": "List 6"
+      },
+      {
+        "Id": 3238,
+        "Value": "List 7"
+      },
+      {
+        "Id": 3239,
+        "Value": "List 8"
+      },
+      {
+        "Id": 3240,
+        "Value": "List 9"
+      }
+    ]
+  },
+  {
+    "Id": 3550,
+    "Name": "Shannon Memo",
+    "Edition": "Memo UDF",
+    "Type": "String"
+  },
+  {
+    "Id": 3551,
+    "Name": "Shannon Yes No",
+    "Edition": "Bool UDF",
+    "Type": "Boolean"
+  },
+  {
+    "Id": 3552,
+    "Name": "Shannon Number",
+    "Edition": "Decimal UDF",
+    "Type": "Decimal"
+  },
+  {
+    "Id": 3553,
+    "Name": "Shannon Date Picker",
+    "Edition": "Date UDF",
+    "Type": "Date"
+  }
+]

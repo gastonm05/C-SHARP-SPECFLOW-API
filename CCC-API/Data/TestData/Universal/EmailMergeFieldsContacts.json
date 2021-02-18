@@ -1,0 +1,394 @@
+﻿[
+  {
+    "Label": "_Contact ExternalID",
+    "Value": "{{MediaContactExternalID}}"
+  },
+  {
+    "Label": "_Contact Source",
+    "Value": "{{MediaContactSource}}"
+  },
+  {
+    "Label": "_Outlet ExternalID",
+    "Value": "{{MediaOutletExternalID}}"
+  },
+  {
+    "Label": "_Outlet Pref. Delivery Type",
+    "Value": "{{MediaOutletPreferredDeliveryType}}"
+  },
+  {
+    "Label": "_Outlet Source",
+    "Value": "{{MediaOutletSource}}"
+  },
+  {
+    "Label": "Contact Address Line 1",
+    "Value": "{{MediaContactAddressLine1}}"
+  },
+  {
+    "Label": "Contact Address Line 2",
+    "Value": "{{MediaContactAddressLine2}}"
+  },
+  {
+    "Label": "Contact Address Line 3",
+    "Value": "{{MediaContactCityStateZip}}"
+  },
+  {
+    "Label": "Contact City",
+    "Value": "{{MediaContactCity}}"
+  },
+  {
+    "Label": "Contact Country",
+    "Value": "{{MediaContactCountry}}"
+  },
+  {
+    "Label": "Contact Created By",
+    "Value": "{{MediaContactEnteredBy}}"
+  },
+  {
+    "Label": "Contact Creation Date",
+    "Value": "{{MediaContactCreationDate}}"
+  },
+  {
+    "Label": "Contact E-mail",
+    "Value": "{{MediaContactEMail}}"
+  },
+  {
+    "Label": "Contact Fax Number",
+    "Value": "{{MediaContactFax}}"
+  },
+  {
+    "Label": "Contact First Name",
+    "Value": "{{MediaContactFirstName}}"
+  },
+  {
+    "Label": "Contact Formal Name",
+    "Value": "{{MediaContactFormalName}}"
+  },
+  {
+    "Label": "Contact Full Name",
+    "Value": "{{MediaContactFullName}}"
+  },
+  {
+    "Label": "Contact Full Name (No Prefix)",
+    "Value": "{{MediaContactFullNameNoPrefix}}"
+  },
+  {
+    "Label": "Contact Full Name (No Suffix)",
+    "Value": "{{MediaContactFullNameNoSuffix}}"
+  },
+  {
+    "Label": "Contact Is Influencer",
+    "Value": "{{MediaContactIsInfluencer}}"
+  },
+  {
+    "Label": "Contact Last Modified By",
+    "Value": "{{MediaContactModifiedBy}}"
+  },
+  {
+    "Label": "Contact Last Modified Date",
+    "Value": "{{MediaContactModifiedDate}}"
+  },
+  {
+    "Label": "Contact Last Name",
+    "Value": "{{MediaContactLastName}}"
+  },
+  {
+    "Label": "Contact LinkedIn Profile",
+    "Value": "{{MediaContactLinkedInURL}}"
+  },
+  {
+    "Label": "Contact List",
+    "Value": "{{MediaContactListText}}"
+  },
+  {
+    "Label": "Contact Name",
+    "Value": "{{MediaContactName}}"
+  },
+  {
+    "Label": "Contact Notes",
+    "Value": "{{MediaContactNote}}"
+  },
+  {
+    "Label": "Contact Phone Number",
+    "Value": "{{MediaContactPhone}}"
+  },
+  {
+    "Label": "Contact Pref. Delivery Method",
+    "Value": "{{MediaContactPreferredDeliveryMethod}}"
+  },
+  {
+    "Label": "Contact Prefix",
+    "Value": "{{MediaContactPrefix}}"
+  },
+  {
+    "Label": "Contact Profile",
+    "Value": "{{MediaContactProfile}}"
+  },
+  {
+    "Label": "Contact Prop. Address Line 1",
+    "Value": "{{MediaContactProprietaryAddressLine1}}"
+  },
+  {
+    "Label": "Contact Prop. Address Line 2",
+    "Value": "{{MediaContactProprietaryAddressLine2}}"
+  },
+  {
+    "Label": "Contact Prop. Address Line 3",
+    "Value": "{{MediaContactProprietaryCityStateZip}}"
+  },
+  {
+    "Label": "Contact Prop. E-mail",
+    "Value": "{{MediaContactProprietaryEMail}}"
+  },
+  {
+    "Label": "Contact Prop. Facebook Profile",
+    "Value": "{{MediaContactProprietaryFacebookURL}}"
+  },
+  {
+    "Label": "Contact Prop. Fax Number",
+    "Value": "{{MediaContactProprietaryFax}}"
+  },
+  {
+    "Label": "Contact Prop. LinkedIn Profile",
+    "Value": "{{MediaContactProprietaryLinkedInURL}}"
+  },
+  {
+    "Label": "Contact Prop. Mobile Phone Number",
+    "Value": "{{MediaContactProprietaryMobilePhone}}"
+  },
+  {
+    "Label": "Contact Prop. Phone Number",
+    "Value": "{{MediaContactProprietaryPhone}}"
+  },
+  {
+    "Label": "Contact Prop. Preferred Delivery Method",
+    "Value": "{{MediaContactProprietaryPreferredDeliveryType}}"
+  },
+  {
+    "Label": "Contact Prop. Profile",
+    "Value": "{{MediaContactProprietaryProfile}}"
+  },
+  {
+    "Label": "Contact Prop. Twitter Handle",
+    "Value": "{{MediaContactProprietaryTwitterUsername}}"
+  },
+  {
+    "Label": "Contact Prop. Website",
+    "Value": "{{MediaContactProprietaryWebsiteURL}}"
+  },
+  {
+    "Label": "Contact Roles",
+    "Value": "{{MediaContactRoles}}"
+  },
+  {
+    "Label": "Contact State",
+    "Value": "{{MediaContactState}}"
+  },
+  {
+    "Label": "Contact Subjects",
+    "Value": "{{MediaContactSubjects}}"
+  },
+  {
+    "Label": "Contact Suffix",
+    "Value": "{{MediaContactSuffix}}"
+  },
+  {
+    "Label": "Contact Sys. Address Line 1",
+    "Value": "{{MediaContactSystemAddressLine1}}"
+  },
+  {
+    "Label": "Contact Sys. Address Line 2",
+    "Value": "{{MediaContactSystemAddressLine2}}"
+  },
+  {
+    "Label": "Contact Sys. Address Line 3",
+    "Value": "{{MediaContactSystemCityStateZip}}"
+  },
+  {
+    "Label": "Contact Sys. E-mail",
+    "Value": "{{MediaContactSystemEMail}}"
+  },
+  {
+    "Label": "Contact Sys. Fax Number",
+    "Value": "{{MediaContactSystemFax}}"
+  },
+  {
+    "Label": "Contact Sys. LinkedIn Profile",
+    "Value": "{{MediaContactSystemLinkedInURL}}"
+  },
+  {
+    "Label": "Contact Sys. Phone Number",
+    "Value": "{{MediaContactSystemPhone}}"
+  },
+  {
+    "Label": "Contact Sys. Pref. Delivery Type",
+    "Value": "{{MediaContactSystemPreferredDeliveryType}}"
+  },
+  {
+    "Label": "Contact Sys. Twitter Handle",
+    "Value": "{{MediaContactSystemTwitterUsername}}"
+  },
+  {
+    "Label": "Contact Title",
+    "Value": "{{MediaContactTitle}}"
+  },
+  {
+    "Label": "Contact Twitter Handle",
+    "Value": "{{MediaContactTwitterUsername}}"
+  },
+  {
+    "Label": "Contact Working Languages",
+    "Value": "{{MediaContactWorkingLanguages}}"
+  },
+  {
+    "Label": "Contact ZIP",
+    "Value": "{{MediaContactZipCode}}"
+  },
+  {
+    "Label": "Outlet Address Line 1",
+    "Value": "{{MediaOutletAddressLine1}}"
+  },
+  {
+    "Label": "Outlet Address Line 2",
+    "Value": "{{MediaOutletAddressLine2}}"
+  },
+  {
+    "Label": "Outlet Address Line 3",
+    "Value": "{{MediaOutletCityStateZip}}"
+  },
+  {
+    "Label": "Outlet Call Letters",
+    "Value": "{{MediaOutletCallLetters}}"
+  },
+  {
+    "Label": "Outlet Circulation Audience",
+    "Value": "{{MediaOutletCirculation}}"
+  },
+  {
+    "Label": "Outlet City",
+    "Value": "{{MediaOutletCity}}"
+  },
+  {
+    "Label": "Outlet Country",
+    "Value": "{{MediaOutletCountry}}"
+  },
+  {
+    "Label": "Outlet Created By",
+    "Value": "{{MediaOutletEnteredBy}}"
+  },
+  {
+    "Label": "Outlet Creation Date",
+    "Value": "{{MediaOutletCreationDate}}"
+  },
+  {
+    "Label": "Outlet DMA",
+    "Value": "{{DMAName}}"
+  },
+  {
+    "Label": "Outlet DMA Rank",
+    "Value": "{{DMARank}}"
+  },
+  {
+    "Label": "Outlet E-mail",
+    "Value": "{{MediaOutletEMail}}"
+  },
+  {
+    "Label": "Outlet Facebook Profile",
+    "Value": "{{MediaOutletFacebookUrl}}"
+  },
+  {
+    "Label": "Outlet Fax Number",
+    "Value": "{{MediaOutletFax}}"
+  },
+  {
+    "Label": "Outlet Frequency",
+    "Value": "{{MediaOutletFrequencyName}}"
+  },
+  {
+    "Label": "Outlet Full Name",
+    "Value": "{{MediaOutletFullName}}"
+  },
+  {
+    "Label": "Outlet HQ",
+    "Value": "{{MediaOutletHQ}}"
+  },
+  {
+    "Label": "Outlet Last Modified By",
+    "Value": "{{MediaOutletModifiedBy}}"
+  },
+  {
+    "Label": "Outlet Last Modified Date",
+    "Value": "{{MediaOutletModifiedDate}}"
+  },
+  {
+    "Label": "Outlet List",
+    "Value": "{{MediaOutletListText}}"
+  },
+  {
+    "Label": "Outlet Medium",
+    "Value": "{{MediaOutletMedium}}"
+  },
+  {
+    "Label": "Outlet Name",
+    "Value": "{{MediaOutletName}}"
+  },
+  {
+    "Label": "Outlet Network",
+    "Value": "{{MediaOutletNetwork}}"
+  },
+  {
+    "Label": "Outlet Regional Focus",
+    "Value": "{{MediaOutletRegionalFocusName}}"
+  },
+  {
+    "Label": "Outlet Notes",
+    "Value": "{{MediaOutletNote}}"
+  },
+  {
+    "Label": "Outlet Phone Number",
+    "Value": "{{MediaOutletPhone}}"
+  },
+  {
+    "Label": "Outlet Pref. Delivery Method",
+    "Value": "{{MediaOutletPreferredDeliveryMethod}}"
+  },
+  {
+    "Label": "Outlet Profile",
+    "Value": "{{MediaOutletProfile}}"
+  },
+  {
+    "Label": "Outlet State",
+    "Value": "{{MediaOutletState}}"
+  },
+  {
+    "Label": "Outlet Station Format",
+    "Value": "{{MediaOutletStationFormat}}"
+  },
+  {
+    "Label": "Outlet Subjects",
+    "Value": "{{SubjectCodeDescription}}"
+  },
+  {
+    "Label": "Outlet Twitter Handle",
+    "Value": "{{MediaOutletTwitterUsername}}"
+  },
+  {
+    "Label": "Outlet Type",
+    "Value": "{{MediaOutletTypeName}}"
+  },
+  {
+    "Label": "Outlet Website",
+    "Value": "{{MediaOutletWebsite}}"
+  },
+  {
+    "Label": "Outlet Working Languages",
+    "Value": "{{MediaOutletWorkingLanguages}}"
+  },
+  {
+    "Label": "Outlet ZIP",
+    "Value": "{{MediaOutletZipCode}}"
+  },
+  {
+    "Label": "Tweets Monitored",
+    "Value": "{{MediaContactTwitterFollower}}"
+  }
+]

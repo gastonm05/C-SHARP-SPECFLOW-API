@@ -1,7 +1,0 @@
-api_methods:
-  list_users: users/list
-  list_some_users: users/list #params: count
-  add_user: users/add_user #params: name, balance
-  get_user: users/get_user #params: id
-  edit_user: users/edit_user #params: id, name, balance, purchases    id=1&name=eric2&balance=990.0&purchases=300
-  purchase: users/purchase #params: id, cost, item

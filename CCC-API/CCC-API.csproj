@@ -1,0 +1,1768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit3TestAdapter.3.13.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.3.13.0\build\net35\NUnit3TestAdapter.props')" />
+  <Import Project="..\packages\NUnit.3.10.1\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.10.1\build\NUnit.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B0AF437-C0E2-4F45-8F19-007F2A497A90}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CCC_API</RootNamespace>
+    <AssemblyName>CCC-API</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\AForge.Imaging.2.2.5\lib\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="CCC-Infrastructure, Version=1.3.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CCC-Infrastructure.1.3.14\lib\net462\CCC-Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Coypu, Version=2.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\Coypu.2.14.0\lib\net40\Coypu.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper, Version=1.50.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\Dapper.1.50.4\lib\net451\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.8.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\DocumentFormat.OpenXml.2.8.1\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Excel, Version=2.1.2.3, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\ExcelDataReader.2.1.2.3\lib\net45\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\MySql.Data.6.10.6\lib\net452\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySQLConnection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\MySQLConnection.1.0.1\lib\MySQLConnection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.10.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.10.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.3.1.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.3.1\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.3.2.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\SpecFlow.2.3.2\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\Selenium.WebDriver.3.8.0\lib\net45\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)\packages\Selenium.Support.3.8.0\lib\net45\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="Zukini, Version=1.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Zukini.API.1.2.7\lib\net46\Zukini.dll</HintPath>
+    </Reference>
+    <Reference Include="Zukini.API, Version=1.2.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zukini.API.1.2.7\lib\net462\Zukini.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Zukini.UI, Version=1.2.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zukini.UI.1.2.7\lib\net462\Zukini.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\BulkPatchData.cs" />
+    <Compile Include="Data\PatchData.cs" />
+    <Compile Include="Data\PostData\AccountsConnectPostData.cs" />
+    <Compile Include="Data\PostData\Activities\BulkAddToCampaignData.cs" />
+    <Compile Include="Data\PostData\Activities\ExportFilterData.cs" />
+    <Compile Include="Data\PostData\Activities\PRWebAddonSubscriptionSessionUpdate.cs" />
+    <Compile Include="Data\PostData\Activities\PRWebDistributionData.cs" />
+    <Compile Include="Data\PostData\Analytics\AnalyticsSearchGroupPostBody.cs" />
+    <Compile Include="Data\PostData\Analytics\SectionBody.cs" />
+    <Compile Include="Data\PostData\Common\BaseExportPostData.cs" />
+    <Compile Include="Data\PostData\Common\ContactSupportPostData.cs" />
+    <Compile Include="Data\PostData\Common\EditorialSupportPostData.cs" />
+    <Compile Include="Data\PostData\Common\MediaResearchRequest.cs" />
+    <Compile Include="Data\PostData\Media\Contact\ContactExportBody.cs" />
+    <Compile Include="Data\PostData\Media\Contact\ContactListData.cs" />
+    <Compile Include="Data\PostData\Media\Contact\DeleteContactsInAList.cs" />
+    <Compile Include="Data\PostData\Media\Contact\DuplicateListData.cs" />
+    <Compile Include="Data\PostData\Media\Contact\EntityListFilterBody.cs" />
+    <Compile Include="Data\PostData\Grids\DataViewPostData.cs" />
+    <Compile Include="Data\PostData\Grids\ExportTemplatePostData.cs" />
+    <Compile Include="Data\PostData\Grids\GridPostData.cs" />
+    <Compile Include="Data\PostData\Media\Contact\MediaSavedSearchPostData.cs" />
+    <Compile Include="Data\PostData\Media\Contact\ContactExportData.cs" />
+    <Compile Include="Data\PostData\Media\Contact\PrivateContact.cs" />
+    <Compile Include="Data\PostData\Media\EdCal\EdCalExportPostData.cs" />
+    <Compile Include="Data\PostData\Media\OptinRequestData.cs" />
+    <Compile Include="Data\PostData\Media\Outlet\OutletListData.cs" />
+    <Compile Include="Data\PostData\Media\Outlet\OutletExportData.cs" />
+    <Compile Include="Data\PostData\Media\Outlet\OutletItem.cs" />
+    <Compile Include="Data\PostData\Media\Outlet\OutletList.cs" />
+    <Compile Include="Data\PostData\Media\SocialInfluencer\SocialInfluencerData.cs" />
+    <Compile Include="Data\PostData\Media\SocialInfluencer\SocialInfluencerExportData.cs" />
+    <Compile Include="Data\PostData\Media\SocialInfluencer\SocialInfluencerListData.cs" />
+    <Compile Include="Data\PostData\Media\SocialInfluencer\SocialInfluencerListSort.cs" />
+    <Compile Include="Data\PostData\Media\SocialInfluencer\SocialInfluencerRemoveItem.cs" />
+    <Compile Include="Data\PostData\Messages\Activity.cs" />
+    <Compile Include="Data\PostData\MSACodePostData.cs" />
+    <Compile Include="Data\PostData\MSAConnectPostData.cs" />
+    <Compile Include="Data\PostData\News\CedromClipPostData.cs" />
+    <Compile Include="Data\PostData\News\ClipReport.cs" />
+    <Compile Include="Data\PostData\News\NewsArchiveImportPostData.cs" />
+    <Compile Include="Data\PostData\News\NewsClipBookPostData.cs" />
+    <Compile Include="Data\PostData\News\NewsMultiQueryPostData.cs" />
+    <Compile Include="Data\PostData\News\NewsItemToCampaignsPostData.cs" />
+    <Compile Include="Data\PostData\News\NewsQueryPostData.cs" />
+    <Compile Include="Data\PostData\News\NewsTagDeleteData.cs" />
+    <Compile Include="Data\PostData\News\NewsTagPostData.cs" />
+    <Compile Include="Data\PostData\News\SavedSearchPostData.cs" />
+    <Compile Include="Data\PostData\Settings\CustomFields\AllowValue.cs" />
+    <Compile Include="Data\PostData\Settings\CustomFields\CustomFieldsPostData.cs" />
+    <Compile Include="Data\PostData\Settings\KeywordSearches\MediaMonitoringKeywordSearchesPostData.cs" />
+    <Compile Include="Data\PostData\Settings\UserManagement\DynamicUser.cs" />
+    <Compile Include="Data\PostData\Settings\UserManagement\ForgotPasswordPostData.cs" />
+    <Compile Include="Data\PostData\Settings\UserManagement\RequestAutorizationSenderPostData.cs" />
+    <Compile Include="Data\PostData\Settings\UserManagement\ResetPasswordPostData.cs" />
+    <Compile Include="Data\PostData\Settings\UserManagement\UserGroup.cs" />
+    <Compile Include="Data\PostData\Streams\StreamPostData.cs" />
+    <Compile Include="Data\PostData\UserParameter\UserParameterPostData.cs" />
+    <Compile Include="Data\Request\AudienceRequest.cs" />
+    <Compile Include="Data\Request\Mojo\SuppressionLoginRequest.cs" />
+    <Compile Include="Data\Request\Mojo\SuppressionSearchRequest.cs" />
+    <Compile Include="Data\Responses\Accounts\UserMe.cs" />
+    <Compile Include="Data\Responses\Accounts\VerifyTokenResponse.cs" />
+    <Compile Include="Data\Responses\Company\CompanyId.cs" />
+    <Compile Include="Data\Responses\ACLS\AnalyticsACLS.cs" />
+    <Compile Include="Data\Responses\ACLS\CustomFieldACLS.cs" />
+    <Compile Include="Data\Responses\ACLS\DashboardsPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\DistributionACLS.cs" />
+    <Compile Include="Data\Responses\ACLS\ImpactACLS.cs" />
+    <Compile Include="Data\Responses\ACLS\InsightsACLS.cs" />
+    <Compile Include="Data\Responses\ACLS\InsightsAccessPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\InsightsTwitterPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\InsightsImageIQPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingOpsPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsAccessPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsACLS.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsAllAuthorizedSenderPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsAllUsersPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsAnalyticsProfileManagementPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsCustomFieldsManagementPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsLabPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsMediaMonitoringSearchesManagementPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsMyAuthorizedSenderPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsMyUserPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsNewsAlertManagementPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsPermissionsBase.cs" />
+    <Compile Include="Data\Responses\ACLS\SettingsSupportPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\SupportACLS.cs" />
+    <Compile Include="Data\Responses\ACLS\SupportEditorialContactPermissions.cs" />
+    <Compile Include="Data\Responses\Activities\AddOns.cs" />
+    <Compile Include="Data\Responses\Activities\ActivitiesGridView.cs" />
+    <Compile Include="Data\Responses\Activities\ChartResponse.cs" />
+    <Compile Include="Data\Responses\Activities\DistroResponseStatus.cs" />
+    <Compile Include="Data\Responses\Activities\PRWebSubscriptionAddonResponse.cs" />
+    <Compile Include="Data\Responses\Activities\PRWebOnlinePickupResponse.cs" />
+    <Compile Include="Data\Responses\Activities\SentimentScoreWidget.cs" />
+    <Compile Include="Data\Responses\Analytics\AnalyticsNewsItem.cs" />
+    <Compile Include="Data\Responses\Analytics\AnalyticsNewsItems.cs" />
+    <Compile Include="Data\Responses\Analytics\AnalyticsSearch.cs" />
+    <Compile Include="Data\Responses\Analytics\AnalyticsSearchGroup.cs" />
+    <Compile Include="Data\Responses\Analytics\AnalyticsSeriesDataResponse.cs" />
+    <Compile Include="Data\Responses\Analytics\Available\AnalyticsArea.cs" />
+    <Compile Include="Data\Responses\Analytics\Available\AvailableDataSeries.cs" />
+    <Compile Include="Data\Responses\Analytics\Available\AvailableDataSet.cs" />
+    <Compile Include="Data\Responses\Analytics\Available\AvailableWidget.cs" />
+    <Compile Include="Data\Responses\Analytics\Available\AvailableWidgetOption.cs" />
+    <Compile Include="Data\Responses\Analytics\Available\AvailableWidgetOptionValueGroup.cs" />
+    <Compile Include="Data\Responses\Analytics\Available\AvailableWidgetOptionValue.cs" />
+    <Compile Include="Data\Responses\Analytics\Available\AvailableWidgetType.cs" />
+    <Compile Include="Data\Responses\Analytics\Available\LanguageArgs.cs" />
+    <Compile Include="Data\Responses\Analytics\DMAWidget.cs" />
+    <Compile Include="Data\Responses\Analytics\SectionTemplate.cs" />
+    <Compile Include="Data\Responses\Analytics\ShareEmailPayload.cs" />
+    <Compile Include="Data\Responses\Analytics\ViewSection.cs" />
+    <Compile Include="Data\Responses\Analytics\SearchesResponse.cs" />
+    <Compile Include="Data\Responses\Analytics\Widget.cs" />
+    <Compile Include="Data\Responses\Analytics\WidgetTemplate.cs" />
+    <Compile Include="Data\Responses\Common\CollectionResponse.cs" />
+    <Compile Include="Data\Responses\Common\Incident.cs" />
+    <Compile Include="Data\Responses\Common\Language.cs" />
+    <Compile Include="Data\Responses\Common\InvalidRequestResponse.cs" />
+    <Compile Include="Data\Responses\DataView\DataViewResponse.cs" />
+    <Compile Include="Data\Responses\DataView\SortResponse.cs" />
+    <Compile Include="Data\Responses\Email\EmailSettings.cs" />
+    <Compile Include="Data\Responses\Email\MergeField.cs" />
+    <Compile Include="Data\Responses\Grid\Column.cs" />
+    <Compile Include="Data\Responses\Impact\Audience.cs" />
+    <Compile Include="Data\Responses\Impact\CisionIDEarned\TopOutletsCID.cs" />
+    <Compile Include="Data\Responses\Impact\CisionIDEarned\SearchCID.cs" />
+    <Compile Include="Data\Responses\Impact\CisionId\AudienceCisionId.cs" />
+    <Compile Include="Data\Responses\Impact\CisionId\CisionIdBaseImpactResponse.cs" />
+    <Compile Include="Data\Responses\Impact\CisionId\EngagementCisionId.cs" />
+    <Compile Include="Data\Responses\Impact\CisionId\LoginCisionId.cs" />
+    <Compile Include="Data\Responses\Impact\CisionId\ReleasesCisionId.cs" />
+    <Compile Include="Data\Responses\Impact\CisionId\ViewCisionId.cs" />
+    <Compile Include="Data\Responses\Impact\CisionId\WebEventsCisionId.cs" />
+    <Compile Include="Data\Responses\Impact\Datebounds.cs" />
+    <Compile Include="Data\Responses\Impact\Earned\AudienceEarned.cs" />
+    <Compile Include="Data\Responses\Impact\Earned\SearchEarned.cs" />
+    <Compile Include="Data\Responses\Impact\Earned\TopOutletEarned.cs" />
+    <Compile Include="Data\Responses\Impact\Earned\ViewsEarned.cs" />
+    <Compile Include="Data\Responses\Impact\Earned\WebEventsEarned.cs" />
+    <Compile Include="Data\Responses\Impact\EngagementData.cs" />
+    <Compile Include="Data\Responses\Impact\Reach.cs" />
+    <Compile Include="Data\Responses\Impact\ReleasesImpact.cs" />
+    <Compile Include="Data\Responses\Impact\Series.cs" />
+    <Compile Include="Data\Responses\Impact\WebEventsData.cs" />
+    <Compile Include="Data\Responses\Insights\InsightsResponse.cs" />
+    <Compile Include="Data\PostData\Media\Contact\ContactsList.cs" />
+    <Compile Include="Data\Responses\Media\Contact\ContactChildren.cs" />
+    <Compile Include="Data\Responses\Media\Contact\ContactExportResponse.cs" />
+    <Compile Include="Data\Responses\Media\Contact\ContactHistory.cs" />
+    <Compile Include="Data\Responses\Media\Contact\ContactsRelated.cs" />
+    <Compile Include="Data\Responses\Media\Contact\ContactSuggestion.cs" />
+    <Compile Include="Data\Responses\Media\Contact\DeleteItem.cs" />
+    <Compile Include="Data\Responses\Media\Contact\InfluencerRankingResponse.cs" />
+    <Compile Include="Data\Responses\Media\Contact\InfluencerRankQueryResponseItemBase.cs" />
+    <Compile Include="Data\Responses\Media\Contact\InstagramDetail.cs" />
+    <Compile Include="Data\Responses\Media\Contact\Lists.cs" />
+    <Compile Include="Data\Responses\Media\BaseMedia.cs" />
+    <Compile Include="Data\Responses\Media\Contact\MediaSavedSearch.cs" />
+    <Compile Include="Data\Responses\Media\Contact\MediaSavedSearchItem.cs" />
+    <Compile Include="Data\Responses\Media\Contact\ProprietaryDataItem.cs" />
+    <Compile Include="Data\Responses\Media\Contact\Query.cs" />
+    <Compile Include="Data\Responses\Media\DmaResponse.cs" />
+    <Compile Include="Data\Responses\Media\OptinRequest.cs" />
+    <Compile Include="Data\Responses\Media\SocialInfluencer\Facets.cs" />
+    <Compile Include="Data\Responses\Media\SocialInfluencer\Location.cs" />
+    <Compile Include="Data\Responses\Media\SocialInfluencer\SingleFacet.cs" />
+    <Compile Include="Data\Responses\Media\SocialInfluencer\SocialInfluencerItem.cs" />
+    <Compile Include="Data\Responses\Media\SocialInfluencer\SocialInfluencerList.cs" />
+    <Compile Include="Data\Responses\Media\SocialInfluencer\SocialInfluencerListIOfList.cs" />
+    <Compile Include="Data\Responses\Media\SocialInfluencer\SocialInfluencers.cs" />
+    <Compile Include="Data\Responses\Media\SocialInfluencer\Source.cs" />
+    <Compile Include="Data\Responses\Media\SocialInfluencer\Subjects.cs" />
+    <Compile Include="Data\Responses\Media\Supplement.cs" />
+    <Compile Include="Data\Responses\Media\Tweet.cs" />
+    <Compile Include="Data\Responses\Media\Tweets.cs" />
+    <Compile Include="Data\Responses\Media\Contact\WorkingLanguages.cs" />
+    <Compile Include="Data\Responses\Media\EntityList.cs" />
+    <Compile Include="Data\Responses\Media\EntityListFilter.cs" />
+    <Compile Include="Data\Responses\Media\IMediaListItem.cs" />
+    <Compile Include="Data\Responses\Media\Membership.cs" />
+    <Compile Include="Data\Responses\Media\Outlet\OutletChildren.cs" />
+    <Compile Include="Data\Responses\Media\Outlet\ReferralsItem.cs" />
+    <Compile Include="Data\Responses\Media\Outlet\Referrals.cs" />
+    <Compile Include="Data\Responses\Media\Outlet\OutletSuggestion.cs" />
+    <Compile Include="Data\Responses\Media\UniqueEmailsLists.cs" />
+    <Compile Include="Data\Responses\Media\Update.cs" />
+    <Compile Include="Data\Responses\Media\Updates.cs" />
+    <Compile Include="Data\Responses\Mojo\SuppressionResponse.cs" />
+    <Compile Include="Data\Responses\News\ClipbookItem.cs" />
+    <Compile Include="Data\Responses\News\ClipbookView.cs" />
+    <Compile Include="Data\Responses\News\ClipReportFields.cs" />
+    <Compile Include="Data\Responses\News\ClipReportResponse.cs" />
+    <Compile Include="Data\Responses\News\ClipReportSingleField.cs" />
+    <Compile Include="Data\Responses\News\Contact.cs" />
+    <Compile Include="Data\Responses\News\ContactLinks.cs" />
+    <Compile Include="Data\Responses\News\NewsAlerts.cs" />
+    <Compile Include="Data\Responses\News\NewsAnalyticsFields.cs" />
+    <Compile Include="Data\Responses\News\NewsArchiveCountriesResponse.cs" />
+    <Compile Include="Data\Responses\News\NewsArchiveImport.cs" />
+    <Compile Include="Data\Responses\News\NewsArchiveLanguage.cs" />
+    <Compile Include="Data\Responses\News\NewsArchiveLanguagesResponse.cs" />
+    <Compile Include="Data\Responses\News\NewsArchivePreferences.cs" />
+    <Compile Include="Data\Responses\News\NewsArchiveSource.cs" />
+    <Compile Include="Data\Responses\News\NewsArchiveSourcesResponse.cs" />
+    <Compile Include="Data\Responses\News\NewsArchive_Links.cs" />
+    <Compile Include="Data\Responses\News\NewsArchive_Meta.cs" />
+    <Compile Include="Data\Responses\News\NewsCedromClipLinks.cs" />
+    <Compile Include="Data\Responses\News\NewsClipBook.cs" />
+    <Compile Include="Data\Responses\News\NewsClipBookDefinitions.cs" />
+    <Compile Include="Data\Responses\News\NewsClipbookDeliveryOptions.cs" />
+    <Compile Include="Data\Responses\News\NewsClipbookGroup.cs" />
+    <Compile Include="Data\Responses\News\NewsClipBooks.cs" />
+    <Compile Include="Data\Responses\News\NewsClipCustomFields.cs" />
+    <Compile Include="Data\Responses\News\NewsCustomFieldPatchModel.cs" />
+    <Compile Include="Data\Responses\News\NewsCustomFields.cs" />
+    <Compile Include="Data\Responses\News\NewsCustomFieldsView.cs" />
+    <Compile Include="Data\Responses\News\NewsItemAnalytics.cs" />
+    <Compile Include="Data\Responses\News\NewsItemAnalyticsSearch.cs" />
+    <Compile Include="Data\Responses\News\NewsItemArchiveSearch.cs" />
+    <Compile Include="Data\Responses\News\NewsItemArchiveSearchLinks.cs" />
+    <Compile Include="Data\Responses\News\NewsItemClip.cs" />
+    <Compile Include="Data\Responses\News\NewsQuery.cs" />
+    <Compile Include="Data\Responses\News\NewsSingleClipBook.cs" />
+    <Compile Include="Data\Responses\News\NewsTag.cs" />
+    <Compile Include="Data\Responses\News\NewsTagItem.cs" />
+    <Compile Include="Data\Responses\News\NewsTags.cs" />
+    <Compile Include="Data\Responses\News\NewsTagsLinks.cs" />
+    <Compile Include="Data\Responses\News\NewsTagsMeta.cs" />
+    <Compile Include="Data\Responses\News\NewsTagsQuery.cs" />
+    <Compile Include="Data\Responses\News\NewsType.cs" />
+    <Compile Include="Data\Responses\News\NewsTypes.cs" />
+    <Compile Include="Data\Responses\News\NewsViewArchive.cs" />
+    <Compile Include="Data\Responses\News\Outlet.cs" />
+    <Compile Include="Data\Responses\News\OutletLinks.cs" />
+    <Compile Include="Data\Responses\News\OutletsList.cs" />
+    <Compile Include="Data\Responses\News\QueryLinks.cs" />
+    <Compile Include="Data\Responses\News\SavedSearches.cs" />
+    <Compile Include="Data\Responses\News\SavedSearchItem.cs" />
+    <Compile Include="Data\Responses\News\SavedSearchItemCriteria.cs" />
+    <Compile Include="Data\Responses\News\SavedSearchCriteria.cs" />
+    <Compile Include="Data\Responses\News\SavedSearchMeta.cs" />
+    <Compile Include="Data\Responses\News\SegmentItem.cs" />
+    <Compile Include="Data\Responses\News\Segments.cs" />
+    <Compile Include="Data\Responses\News\SingleSavedSearch.cs" />
+    <Compile Include="Data\Responses\News\Template_Links.cs" />
+    <Compile Include="Data\Responses\News\Tone.cs" />
+    <Compile Include="Data\Responses\News\Tones.cs" />
+    <Compile Include="Data\Responses\News\TVEyesEditedClipsView.cs" />
+    <Compile Include="Data\Responses\News\UDFAllowedValues.cs" />
+    <Compile Include="Data\Responses\Settings\AlertManagement\ManagementAlert.cs" />
+    <Compile Include="Data\Responses\Settings\AlertManagement\ManagementAlerts.cs" />
+    <Compile Include="Data\Responses\Settings\AutomatedNewsOutput\FtpExportConfig.cs" />
+    <Compile Include="Data\Responses\Settings\CustomFields\AllCustomFieldsResponse.cs" />
+    <Compile Include="Data\Responses\Settings\FormManagement\Field.cs" />
+    <Compile Include="Data\Responses\Settings\FormManagement\FormsActivity.cs" />
+    <Compile Include="Data\Responses\Settings\FormManagement\ListFormsActivities.cs" />
+    <Compile Include="Data\Responses\Settings\FormManagement\Meta.cs" />
+    <Compile Include="Data\Responses\Settings\KeywordSearches\AllMediaMonitoringKeywordSearchesResponse.cs" />
+    <Compile Include="Data\Responses\Settings\KeywordSearches\MediaMonitorKeywordSearch.cs" />
+    <Compile Include="Data\Responses\Settings\KeywordSearches\MediaMonitorUserSearch.cs" />
+    <Compile Include="Data\Responses\Settings\KeywordSearches\MediaMonitorUserSearchPost.cs" />
+    <Compile Include="Data\Responses\Settings\KeywordSearches\SampleKeywordSearchResponse.cs" />
+    <Compile Include="Data\Responses\Settings\SmartTags\SmartTagsConfig.cs" />
+    <Compile Include="Data\Responses\Settings\UserManagement\ResetPasswordResponse.cs" />
+    <Compile Include="Data\Responses\Settings\WireDistribution\DataGroupWireDistributionConfig.cs" />
+    <Compile Include="Data\Responses\Settings\WireDistribution\WireDistributionConfig.cs" />
+    <Compile Include="Data\Responses\SocialMedia\PinterestBoards.cs" />
+    <Compile Include="Data\Responses\SocialMedia\SocialMediaAccounts.cs" />
+    <Compile Include="Data\Responses\Streams\Groups\GroupsResponse.cs" />
+    <Compile Include="Data\Responses\Streams\StreamDeleteResponse.cs" />
+    <Compile Include="Data\Responses\Streams\StreamsResponse.cs" />
+    <Compile Include="Data\Responses\UserParameters\UserParameter.cs" />
+    <Compile Include="Data\Responses\Zen\CoverageResponse.cs" />
+    <Compile Include="Data\Responses\Zen\NewsItem.cs" />
+    <Compile Include="Data\Responses\Zen\NewsItemResult.cs" />
+    <Compile Include="Data\Responses\Zen\NewsResponse.cs" />
+    <Compile Include="Data\SpecFlowTableInput\ACLSProperty.cs" />
+    <Compile Include="Data\TestDataObjects\Activities\ActivityCounts.cs" />
+    <Compile Include="Data\PostData\Activities\PRWebDistributionSessionWithSubscription.cs" />
+    <Compile Include="Data\TestDataObjects\ContactSupport.cs" />
+    <Compile Include="Data\TestDataObjects\LanguageKeys.cs" />
+    <Compile Include="Data\TestDataObjects\Activities\PublicationState.cs" />
+    <Compile Include="Data\TestDataObjects\Activities\PublishActivityType.cs" />
+    <Compile Include="Data\Factory\AnalyticsView\TestDataFactory.cs" />
+    <Compile Include="Data\TestDataObjects\Analytics\AnalyticSentDistributionData.cs" />
+    <Compile Include="Data\PostData\GenerateReport.cs" />
+    <Compile Include="Data\PostData\Messages\MessageData.cs" />
+    <Compile Include="Data\PostData\Messages\PublishTime.cs" />
+    <Compile Include="Data\PostData\Messages\SharedLink.cs" />
+    <Compile Include="Data\PostData\Messages\SocialPostInfo.cs" />
+    <Compile Include="Data\Responses\Accounts\ProfilesResponse.cs" />
+    <Compile Include="Data\Responses\Activities\CustomActivity.cs" />
+    <Compile Include="Data\Responses\Analytics\AnalyticsSeries.cs" />
+    <Compile Include="Data\Responses\Analytics\WidgetData.cs" />
+    <Compile Include="Data\Responses\Campaigns\Campaign.cs" />
+    <Compile Include="Data\Responses\Campaigns\CampaignsList.cs" />
+    <Compile Include="Data\Responses\Common\Geo.cs" />
+    <Compile Include="Data\Responses\Email\HtmlTemplate.cs" />
+    <Compile Include="Data\Responses\Media\Contact\SimilarContacts.cs" />
+    <Compile Include="Data\Responses\Media\Contact\SingleFacet.cs" />
+    <Compile Include="Data\Responses\Media\Contact\Contacts.cs" />
+    <Compile Include="Data\Responses\Media\Contact\ContactsItem.cs" />
+    <Compile Include="Data\Responses\Media\Contact\Facets.cs" />
+    <Compile Include="Data\Responses\Media\Contact\SocialItem.cs" />
+    <Compile Include="Data\Responses\Media\Contact\SocialProfile.cs" />
+    <Compile Include="Data\Responses\Media\Outlet\Outlets.cs" />
+    <Compile Include="Data\Responses\Media\Outlet\OutletsItem.cs" />
+    <Compile Include="Data\Responses\Messages\Accounts.cs" />
+    <Compile Include="Data\Responses\Messages\MessageResponse.cs" />
+    <Compile Include="Data\PostData\News\NewsForwardPostData.cs" />
+    <Compile Include="Data\PostData\Settings\UserManagement\UserManagementPostData.cs" />
+    <Compile Include="Data\Responses\ACLS\NewsTagsPermissions.cs" />
+    <Compile Include="Data\Responses\Activities\Activity.cs" />
+    <Compile Include="Data\Responses\Activities\DistributionPrivilegeResponse.cs" />
+    <Compile Include="Data\Responses\Activities\OnHoldReasonResponse.cs" />
+    <Compile Include="Data\Responses\Activities\PublishActivitiesResponse.cs" />
+    <Compile Include="Data\Responses\Activities\PRWebDistributionResponse.cs" />
+    <Compile Include="Data\Responses\Activities\Package.cs" />
+    <Compile Include="Data\Responses\Activities\PRWebSubscriptionResponse.cs" />
+    <Compile Include="Data\Responses\Analytics\ViewsViewResponse.cs" />
+    <Compile Include="Data\Responses\ACLS\ACLSView.cs" />
+    <Compile Include="Data\Responses\ACLS\NewsACLS.cs" />
+    <Compile Include="Data\Responses\ACLS\NewsAnalyticsPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\NewsArchivePermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\NewsForwardWizardPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\NewsItemsPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\NewsSearchesPermissions.cs" />
+    <Compile Include="Data\Responses\ACLS\NewsTemplatesPermissions.cs" />
+    <Compile Include="Data\Responses\Common\GenericResponseWithTotal.cs" />
+    <Compile Include="Data\Responses\Common\JobResponse.cs" />
+    <Compile Include="Data\Responses\Email\EmailDist.cs" />
+    <Compile Include="Data\Responses\Email\EmailDistDetails.cs" />
+    <Compile Include="Data\Responses\Media\EdCal\EdCals.cs" />
+    <Compile Include="Data\Responses\Media\EdCal\EdCalsItem.cs" />
+    <Compile Include="Data\Responses\Accounts\MeResponse.cs" />
+    <Compile Include="Data\Responses\Messages\Counts.cs" />
+    <Compile Include="Data\Responses\News\Export.cs" />
+    <Compile Include="Data\Responses\News\Facets.cs" />
+    <Compile Include="Data\Responses\News\Feed.cs" />
+    <Compile Include="Data\Responses\News\Forwards.cs" />
+    <Compile Include="Data\Responses\News\FW_Links.cs" />
+    <Compile Include="Data\Responses\News\Links.cs" />
+    <Compile Include="Data\Responses\News\NewsItem.cs" />
+    <Compile Include="Data\Responses\News\NewsView.cs" />
+    <Compile Include="Data\Responses\News\SingleFacet.cs" />
+    <Compile Include="Data\Responses\News\SingleTemplate.cs" />
+    <Compile Include="Data\Responses\News\Templates.cs" />
+    <Compile Include="Data\Responses\News\Template_Meta.cs" />
+    <Compile Include="Data\Responses\Settings\UserManagement\DataGroupResponse.cs" />
+    <Compile Include="Data\Responses\Common\Status.cs" />
+    <Compile Include="Data\TestDataObjects\Account.cs" />
+    <Compile Include="Data\Responses\PrNewswire\DistributionVisibilityReportUrl.cs" />
+    <Compile Include="Data\Responses\RecipientsResponse.cs" />
+    <Compile Include="Data\TestDataObjects\Analytics\PRWebOnlinePickupSource.cs" />
+    <Compile Include="Data\TestDataObjects\Areas.cs" />
+    <Compile Include="Data\TestDataObjects\City.cs" />
+    <Compile Include="Data\TestDataObjects\CompanyFeedsModel.cs" />
+    <Compile Include="Data\TestDataObjects\FeedsModel.cs" />
+    <Compile Include="Data\TestDataObjects\Fields.cs" />
+    <Compile Include="Data\TestDataObjects\Activities\PRWebIndustryOutletCategories.cs" />
+    <Compile Include="Data\TestDataObjects\NewsImage.cs" />
+    <Compile Include="Data\TestDataObjects\Profile.cs" />
+    <Compile Include="Data\TestDataObjects\Activities\PRWebReleaseStatus.cs" />
+    <Compile Include="Data\TestDataObjects\Activities\PublishActivity.cs" />
+    <Compile Include="Data\TestDataObjects\TimeZonesResponse.cs" />
+    <Compile Include="Data\TestDataObjects\Topics.cs" />
+    <Compile Include="Data\TestDataObjects\Media\Contact.cs" />
+    <Compile Include="Data\TestDataObjects\UploadingFile.cs" />
+    <EmbeddedResource Include="Data\TestData\Internal\ForgotPasswordRegularData.json" />
+    <Compile Include="Data\TestDataObjects\Zen\ZenNewsItemData.cs" />
+    <Compile Include="Features\ACLS\ACLS_Insights.feature.cs">
+      <DependentUpon>ACLS_Insights.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\ACLS\ACLS_Settings.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ACLS_Settings.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Activities\Grid\MyActivitiesGrid.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyActivitiesGrid.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Activities\NewActivity\CustomActivity.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomActivity.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Activities\PRWeb\DistributionPrivilege.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DistributionPrivilege.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Activities\Export\ExportActivities.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExportActivities.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Activities\PRWeb\PreviewActions.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PreviewActions.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Activities\PRWeb\PRWebDistribution2.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRWebDistribution2.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsActivityCountsEndPoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsActivityCountsEndPoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsCompanySentimentScore.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsCompanySentimentScore.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsDMAEndPoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsDMAEndPoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsFilterByTone.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsFilterByTone.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsMentionsMomentumEndPoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsMentionsMomentumEndPoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsOutletsEndPoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsOutletsEndPoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsProminenceAndImpactEndPoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsProminenceAndImpactEndPoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsPublicDashboardsEndPoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsPublicDashboardsEndPoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsSearchesEndPoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsSearchesEndPoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsSectionWidgetTemplates.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsSectionWidgetTemplates.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsShareUrl.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsShareUrl.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsSorting.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsSorting.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Campaigns\Campaigns.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Campaigns.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Common\ChurnZero.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChurnZero.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Common\ContactSupport.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactSupport.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Common\DataGroup.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataGroup.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Common\DataViewFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataViewFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Common\EditorialSupport.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditorialSupport.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Common\ExportTemplate.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExportTemplate.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Common\Grid.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Grid.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Common\Language.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Language.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Common\MediaResearchRequest.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MediaResearchRequest.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Email\EmailSentDetailsReports.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmailSentDetailsReports.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Feeds\Feeds.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Feeds.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\FileUpload\FileUpload.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FileUpload.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Impact\EarnedAnalytics.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EarnedAnalytics.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Impact\EarnedMedia.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EarnedMedia.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Impact\ImpactAnalytics.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImpactAnalytics.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Impact\ImpactPressReleases.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImpactPressReleases.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Impact\IntegrationEarnedMedia.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntegrationEarnedMedia.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Impact\IntegrationImpactReleases.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntegrationImpactReleases.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\Contacts\ContactProfile.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactProfile.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\Contacts\ContactSearchResultsFiltering.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactSearchResultsFiltering.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\Contacts\InfluencerTweets.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InfluencerTweets.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Insights\Insights.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Insights.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\Contacts\ContactsEndpoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactsEndpoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\Contacts\EditContact.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditContact.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\Contacts\InstagramStream.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InstagramStream.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\Contacts\AddContact.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddContact.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\DMA\DmaEndpoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DmaEndpoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\EdCal\EdCalsEndpoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EdCalsEndpoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\EdCal\ExportEdCals.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExportEdCals.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\Outlet\OutletConversions.feature.cs">
+      <DependentUpon>OutletConversions.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\Media\Outlet\OutletSearchResultsFiltering.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutletSearchResultsFiltering.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\Updates\UpdatesEndpoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdatesEndpoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Company\Company.feature.cs">
+      <DependentUpon>Company.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\Messages\Activities.feature.cs">
+      <DependentUpon>Activities.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\Messages\Messages.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Media\Outlet\OutletsEndpoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutletsEndpoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsAlerts.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsAlerts.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsAnalytics.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsAnalytics.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsArchive.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsArchive.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsCedrom.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsCedrom.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsClipBook.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsClipBook.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsCustomFields.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsCustomFields.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsOutlets.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsOutlets.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsReport.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsReport.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsResultsFilter.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsResultsFilter.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsSavedSearches.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsSavedSearches.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsSearch.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsSearch.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsSmartTags.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsSmartTags.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsTags.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsTags.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsTVEyes.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsTVEyes.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsView.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsView.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsTemplates.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsTemplates.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Permissions\News\NewsReadOnlyUser.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsReadOnlyUser.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Security\BearerToken.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BearerToken.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Settings\AlertManagement\AlertManagement.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlertManagement.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Settings\AutomatedNewsOutput\AutomatedNewsOutput.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedNewsOutput.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Settings\CustomFields\CustomFields1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomFields.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Settings\FormManagement\FormManagement.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormManagement.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Settings\KeywordSearches\KeywordSearches.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KeywordSearches.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Settings\SmartTags\SmartTags.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SmartTags.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Settings\WireDistribution\WireDistribution.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WireDistribution.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SocialMedia\Pinterest.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pinterest.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Streams\Streams.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Streams.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Settings\UserManagement\UserManagement.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserManagement.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Support\SupportTranslations.feature.cs">
+      <DependentUpon>SupportTranslations.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\UserParameters\UserParameters.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserParameters.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsEditAdvancedAnalytics.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsEditAdvancedAnalytics.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Company\CompanyService.cs" />
+    <Compile Include="Services\Activities\CustomActivityService.cs" />
+    <Compile Include="Services\Activities\DB\ActivitiesDbService.cs" />
+    <Compile Include="Services\Analytics\DMAWidgetServices.cs" />
+    <Compile Include="Services\Analytics\NewsAnalyticsService.cs" />
+    <Compile Include="Services\Analytics\SentimentScoreService.cs" />
+    <Compile Include="Services\Analytics\ShareAnalyticsReportService.cs" />
+    <Compile Include="Services\AuthApiService.cs" />
+    <Compile Include="Services\BaseApiService.cs" />
+    <Compile Include="Services\Common\ChurnZeroService.cs" />
+    <Compile Include="Services\Common\db\JobsDbService.cs" />
+    <Compile Include="Services\Common\LanguageService.cs" />
+    <Compile Include="Services\Feeds\FeedsDbService.cs" />
+    <Compile Include="Services\Impact\EarnedAnalyticsSevices.cs" />
+    <Compile Include="Services\Impact\EarnedMediaServices.cs" />
+    <Compile Include="Services\Impact\ImpactAnalyticsServices.cs" />
+    <Compile Include="Services\Impact\ImpactBaseServices.cs" />
+    <Compile Include="Services\Impact\ImpactService.cs" />
+    <Compile Include="Services\Media\DMA\DMAService.cs" />
+    <Compile Include="Services\Mojo\MojoBaseService.cs" />
+    <Compile Include="Services\Mojo\SuppressionService\SuppressionService.cs" />
+    <Compile Include="Services\MyGorkana\MyGorkanaBaseService.cs" />
+    <Compile Include="Services\News\DB\NewsDbService.cs" />
+    <Compile Include="Services\Analytics\AnalyticsWidgetSettings.cs" />
+    <Compile Include="Services\Analytics\ShareUrlService.cs" />
+    <Compile Include="Services\Common\ContactService.cs" />
+    <Compile Include="Services\Common\db\AccountsDbService.cs" />
+    <Compile Include="Services\Common\db\BaseDbService.cs" />
+    <Compile Include="Services\Analytics\Mentions\BaseMentionsService.cs" />
+    <Compile Include="Services\Analytics\Common.cs" />
+    <Compile Include="Services\Analytics\ArticlesAndOutletsService.cs" />
+    <Compile Include="Services\Analytics\Mentions\CompanyMindshareService.cs" />
+    <Compile Include="Services\Analytics\Mentions\ImpactService.cs" />
+    <Compile Include="Services\Analytics\Mentions\ProminenceService.cs" />
+    <Compile Include="Services\Analytics\SearchesService.cs" />
+    <Compile Include="Services\Campaigns\CampaignsService.cs" />
+    <Compile Include="Services\Common\ExportTemplateService.cs" />
+    <Compile Include="Services\Common\Jobs\JobsService.cs" />
+    <Compile Include="Services\Common\ui\DataViewService.cs" />
+    <Compile Include="Services\Common\ui\GridService.cs" />
+    <Compile Include="Services\EmailDistribution\DB\AnalyticsTracking.cs" />
+    <Compile Include="Services\EmailDistribution\DB\Distribution.cs" />
+    <Compile Include="Services\EmailDistribution\DB\DistributionEmail.cs" />
+    <Compile Include="Services\EmailDistribution\DB\EmailDistributionDBService.cs" />
+    <Compile Include="Services\EmailDistribution\EmailSentDetailsService.cs" />
+    <Compile Include="Services\FileUpload\FileUploadService.cs" />
+    <Compile Include="Services\Insights\InsightsService.cs" />
+    <Compile Include="Services\Media\Contact\ContactsListService.cs" />
+    <Compile Include="Services\Media\Contact\ContactsService.cs" />
+    <Compile Include="Services\Media\Contact\DeleteListData.cs" />
+    <Compile Include="Services\Media\Contact\InstagramStreamService.cs" />
+    <Compile Include="Services\Media\EdCal\EdCalsService.cs" />
+    <Compile Include="Services\Analytics\Mentions\MentionsOverTimeService.cs" />
+    <Compile Include="Services\Media\EntityListService.cs" />
+    <Compile Include="Services\Media\Updates\MediaUpdatesService.cs" />
+    <Compile Include="Services\Messages\MessageData.cs" />
+    <Compile Include="Services\Media\Outlet\OutletsService.cs" />
+    <Compile Include="Services\News\MyCoverageNewsRepository.cs" />
+    <Compile Include="Services\News\NewsAlertService.cs" />
+    <Compile Include="Services\News\NewsArchiveService.cs" />
+    <Compile Include="Services\News\NewsReportsService.cs" />
+    <Compile Include="Services\News\NewsSmartTagsService.cs" />
+    <Compile Include="Services\News\NewsTagsService.cs" />
+    <Compile Include="Services\News\NewsTVEyesService.cs" />
+    <Compile Include="Services\News\SavedSearchesService.cs" />
+    <Compile Include="Services\News\TemplatesService.cs" />
+    <Compile Include="Services\Settings\AlertManagement\AlertManagementService.cs" />
+    <Compile Include="Services\Settings\CustomFields\CustomFieldsService.cs" />
+    <Compile Include="Services\Settings\FormManagement\FormManagementService.cs" />
+    <Compile Include="Services\Settings\FtpExportManagement\FtpExportManagementService.cs" />
+    <Compile Include="Services\Settings\KeywordSearches\MediaMonitoringService.cs" />
+    <Compile Include="Services\Settings\UserManagement\UserManagementService.cs" />
+    <Compile Include="Services\Settings\WireDistribution\WireDistributionAccountService.cs" />
+    <Compile Include="Services\SocialMedia\SocialMediaService.cs" />
+    <Compile Include="Services\Streams\Platform.cs" />
+    <Compile Include="Services\Streams\StreamsService.cs" />
+    <Compile Include="Services\Support\Translations\SupportTranslationsService.cs" />
+    <Compile Include="Services\UserParameters\UserParametersService.cs" />
+    <Compile Include="Steps\ACLS\ACLSEndpointSteps.cs" />
+    <Compile Include="Steps\Activities\ActivitiesGridSteps.cs" />
+    <Compile Include="Steps\Analytics\NewsAnalyticsSteps.cs" />
+    <Compile Include="Steps\Analytics\AnalyticsShareUrlSteps.cs" />
+    <Compile Include="Steps\Analytics\AnalyticsWidgetSteps.cs" />
+    <Compile Include="Steps\Common\AuthApiSteps.cs" />
+    <Compile Include="Steps\Common\ChurnZeroSteps.cs" />
+    <Compile Include="Steps\Common\ContactSupportSteps.cs" />
+    <Compile Include="Steps\Common\JobSteps.cs" />
+    <Compile Include="Steps\Company\CompanySteps.cs" />
+    <Compile Include="Steps\Common\LanguageSteps.cs" />
+    <Compile Include="Steps\Common\MediaResearchRequestSteps.cs" />
+    <Compile Include="Steps\EmailDistribution\DistributionTestsSetupSteps.cs" />
+    <Compile Include="Steps\Feeds\FeedSteps.cs" />
+    <Compile Include="Steps\Impact\EarnedMedia\EarnedAnalyticsSteps.cs" />
+    <Compile Include="Steps\Impact\EarnedMedia\EarnedMediaSteps.cs" />
+    <Compile Include="Steps\Impact\ImpactAnalyticsSteps.cs" />
+    <Compile Include="Steps\Impact\ImpactPressReleasesSteps.cs" />
+    <Compile Include="Steps\Media\Contact\Activities\CustomActivitySteps.cs" />
+    <Compile Include="Steps\Media\Contact\Activities\PublishActivitySteps.cs" />
+    <Compile Include="Steps\Analytics\AnalyticsActivityCountsEndPointSteps.cs" />
+    <Compile Include="Steps\Analytics\AnalyticsMomentumSteps.cs" />
+    <Compile Include="Steps\Analytics\AnalyticsArticlesAndOutletsEndPointSteps.cs" />
+    <Compile Include="Steps\Analytics\AnalyticsProminenceAndImpactSteps.cs" />
+    <Compile Include="Steps\Analytics\AnalyticsSearchesEndPointSteps.cs" />
+    <Compile Include="Steps\Campaigns\CampaignsSteps.cs" />
+    <Compile Include="Steps\Common\DataGroupSteps.cs" />
+    <Compile Include="Steps\Common\DataViewSteps.cs" />
+    <Compile Include="Steps\Common\ExportTemplateSteps.cs" />
+    <Compile Include="Steps\Common\GridSteps.cs" />
+    <Compile Include="Steps\EmailDistribution\EmailDistributionWizardSteps.cs" />
+    <Compile Include="Features\Activities\PRWeb\PRWebDistribution.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRWebDistribution.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Activities\PRWeb\PRWebSubscription.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRWebSubscription.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Analytics\AnalyticsViewEndPoint.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsViewEndPoint.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Common\Geo.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Geo.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Email\EmailDistributionWizard.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmailDistributionWizard.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\News\NewsForwards.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsForwards.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Email\EmailDetails.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmailDetails.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Common\Login.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ACLS\ACLS_News.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ACLS_News.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\PrNewswire\Distribution.VisibilityReportsUrl.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Distribution.VisibilityReportsUrl.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ApiHooks.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\Responses\Accounts\ConnectResponse.cs" />
+    <Compile Include="Services\AccountsService.cs" />
+    <Compile Include="Services\Activities\DB\DbDistributionPRWebService.cs" />
+    <Compile Include="Services\Common\AccountInfoService.cs" />
+    <Compile Include="Services\Common\Support\CompanyService.cs" />
+    <Compile Include="Services\Common\Support\PRWebAdminService.cs" />
+    <Compile Include="Services\Common\Support\SiteManagerService.cs" />
+    <Compile Include="Services\Common\Support\CompanyDatabase.cs" />
+    <Compile Include="Services\Activities\MyActivitiesService.cs" />
+    <Compile Include="Services\Activities\PRWebDistributionService.cs" />
+    <Compile Include="Services\Analytics\DashboardsService.cs" />
+    <Compile Include="Services\ACLS\ACLSService.cs" />
+    <Compile Include="Services\ACLS\NewsACLSService.cs" />
+    <Compile Include="Services\Common\GeoService.cs" />
+    <Compile Include="Services\News\NewsForwardService.cs" />
+    <Compile Include="Services\News\NewsViewService.cs" />
+    <Compile Include="Steps\Activities\PRWebDistributionSteps.cs" />
+    <Compile Include="Services\EmailDistribution\EmailDistributionService.cs" />
+    <Compile Include="Steps\Activities\PRWebSubscriptionSteps.cs" />
+    <Compile Include="Steps\ACLS\NewsACLSEndpointSteps.cs" />
+    <Compile Include="Steps\Analytics\AnalyticsEmailReportSteps.cs" />
+    <Compile Include="Steps\Common\GeoSteps.cs" />
+    <Compile Include="Steps\FileUpload\FileUploadSteps.cs" />
+    <Compile Include="Steps\Insights\InsightsSteps.cs" />
+    <Compile Include="Steps\Media\Contact\AddContactSteps.cs" />
+    <Compile Include="Steps\Media\Contact\CommonContactSteps.cs" />
+    <Compile Include="Steps\Media\Contact\ContactListSteps.cs" />
+    <Compile Include="Steps\Media\Contact\ContactProfileSteps.cs" />
+    <Compile Include="Steps\Media\Contact\ContactSearchSteps.cs" />
+    <Compile Include="Steps\Media\Contact\InstagramStreamSteps.cs" />
+    <Compile Include="Steps\Media\DMA\DMASteps.cs" />
+    <Compile Include="Steps\Media\EdCal\EdCalsSteps.cs" />
+    <Compile Include="Steps\Media\Updates\MediaUpdatesSteps.cs" />
+    <Compile Include="Steps\Messages\MessagesSteps.cs" />
+    <Compile Include="Steps\Media\Outlet\OutletsSteps.cs" />
+    <Compile Include="Steps\News\NewsAlertsSteps.cs" />
+    <Compile Include="Steps\News\NewsArchiveSteps.cs" />
+    <Compile Include="Steps\News\NewsEditAdvancedAnalyticsSteps.cs" />
+    <Compile Include="Steps\News\NewsForwardsEndpointSteps.cs" />
+    <Compile Include="Steps\News\NewsReportsSteps.cs" />
+    <Compile Include="Steps\News\NewsTagsSteps.cs" />
+    <Compile Include="Steps\News\NewsTVEyesSteps.cs" />
+    <Compile Include="Steps\News\NewsViewEndpointSteps.cs" />
+    <Compile Include="Steps\EmailDistribution\EmailDetailsSteps.cs" />
+    <Compile Include="Steps\News\SavedSearchEndpointSteps.cs" />
+    <Compile Include="Steps\News\TemplatesEndpointSteps.cs" />
+    <Compile Include="Steps\PrNewswire\DistributionVisibilityReportsUrlSteps.cs" />
+    <Compile Include="Services\PrNewswire\DistributionVisibilityReportUrlService.cs" />
+    <Compile Include="Steps\Security\AuthenticationSteps.cs" />
+    <Compile Include="Steps\Settings\AlertManagement\AlertManagementSteps.cs" />
+    <Compile Include="Steps\Settings\AutomatedNewsOutput\AutomatedNewsOutputSteps.cs" />
+    <Compile Include="Steps\Settings\CustomFields\SettingsCustomFieldsNewsSteps.cs" />
+    <Compile Include="Steps\Settings\FormManagement\FormManagementSteps.cs" />
+    <Compile Include="Steps\Settings\KeywordSearches\KeywordSearchesSteps.cs" />
+    <Compile Include="Steps\Settings\SmartTags\SmartTagsSteps.cs" />
+    <Compile Include="Steps\Settings\UserManagement\UserManagementSteps.cs" />
+    <Compile Include="Steps\Settings\WireDistribution\WireDistributionSteps.cs" />
+    <Compile Include="Steps\SocialMedia\PinterestSteps.cs" />
+    <Compile Include="Steps\StepHooks.cs" />
+    <Compile Include="Steps\Streams\StreamsSteps.cs" />
+    <Compile Include="Steps\Support\SupportTranslationsSteps.cs" />
+    <Compile Include="Steps\TestDataSteps.cs" />
+    <Compile Include="Steps\TimeTransforms.cs" />
+    <Compile Include="Steps\Transforms.cs" />
+    <Compile Include="Steps\UserParameters\UserParameterSteps.cs" />
+    <Compile Include="Utils\Assert.cs" />
+    <Compile Include="Utils\Office2007Reader.cs" />
+    <Compile Include="Utils\ApiEndpoints.cs" />
+    <Compile Include="Steps\Analytics\AnalyticsDashboardsEndPointSteps.cs" />
+    <Compile Include="Steps\Common\LoginSteps.cs" />
+    <Compile Include="Utils\C3UserFactory.cs" />
+  </ItemGroup>
+  <Choose>
+    <When Condition=" '$(Configuration)' == 'Release' ">
+      <ItemGroup>
+        <None Include="config.release\App.config">
+          <Link>App.config</Link>
+        </None>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <None Include="App.config">
+          <SubType>Designer</SubType>
+        </None>
+        <None Include="config.release\App.config" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="CCC-API.nunit">
+      <SubType>Designer</SubType>
+    </None>
+    <EmbeddedResource Include="Data\TestData\Internal\APIUsers.json" />
+    <EmbeddedResource Include="Data\TestData\Release\APIUsers.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebDistribution.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistribution.json" />
+    <EmbeddedResource Include="Data\TestData\Release\Distributions.json" />
+    <EmbeddedResource Include="Data\TestData\Universal\FormattedText.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\TestData\Universal\FormattedText.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\TestData\Internal\OnHoldReason.json" />
+    <EmbeddedResource Include="Data\TestData\Release\OnHoldReason.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\Outlets.json" />
+    <EmbeddedResource Include="Data\TestData\Release\Outlets.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebDistributionWithVideo.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistributionWithVideo.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistributionWithIdl.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebDistributionWithIdl.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\AnalyticSentDistribution.json" />
+    <EmbeddedResource Include="Data\TestData\Release\AnalyticSentDistribution.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\AnalyticsSentDistributionOnlinepickup.json" />
+    <EmbeddedResource Include="Data\TestData\Release\AnalyticsSentDistributionOnlinepickup.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebDistributionImageAttach.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistributionImageAttach.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\Contacts.json" />
+    <EmbeddedResource Include="Data\TestData\Release\Contacts.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\ExportTemplateData.json" />
+    <EmbeddedResource Include="Data\TestData\Release\ExportTemplateData.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\DistributionLinks.json" />
+    <EmbeddedResource Include="Data\TestData\Release\DistributionLinks.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\UserManagerData.json" />
+    <EmbeddedResource Include="Data\TestData\Release\UserManagerData.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\TokenUserData.json" />
+    <EmbeddedResource Include="Data\TestData\Release\TokenUserData.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\KeywordSearchesTestData.json" />
+    <EmbeddedResource Include="Data\TestData\Release\KeywordSearchesTestData.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebDistributionWithPullOutQuote.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistributionWithPullOutQuote.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\RequestSenderAuthorizationData.json" />
+    <EmbeddedResource Include="Data\TestData\Release\RequestSenderAuthorizationData.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\EditorialSupportData.json" />
+    <EmbeddedResource Include="Data\TestData\Release\EditorialSupportData.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\MSAloginInfo.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\DistributionIDForSingleSubscription.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\NewsOutletsLists.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\NewsOutlet.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\NewsAnalyticsProduct.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\NewsAnalyticsFields.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\Feeds.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\ForgotPasswordData.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\ForgotPasswordSameData.json">
+      <LastGenOutput>ForgotPasswordSameData1.feature.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\TestData\Internal\LCIDLoginInfo.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\AnalyticsSectionBody.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\CompanyIdCustomerId.json" />
+    <EmbeddedResource Include="Data\TestData\Release\CompanyIdCustomerId.json" />
+    <EmbeddedResource Include="Data\TestData\Release\CompanyIdXAPIKEYHeader.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Data\TestData\Internal\Outlets.json" />
+    <EmbeddedResource Include="Data\TestData\Release\NewsTags.json" />
+    <EmbeddedResource Include="Data\TestData\Release\MSAloginInfo.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\NewsCustomFields.json" />
+    <None Include="Data\TestData\Internal\Outlets.json" />
+    <EmbeddedResource Include="Data\TestData\Release\NewsCustomFields.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebDistributionIdWithoutSendToIris.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebDistributionIdWithSendToIris.json" />
+    <EmbeddedResource Include="Data\TestData\Release\DistributionIDForSingleSubscription.json" />
+    <EmbeddedResource Include="Data\TestData\Release\NewsOutletsLists.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebDistributionPublished30plusDaysAgo.json" />
+    <EmbeddedResource Include="Data\TestData\Release\NewsOutlet.json" />
+    <EmbeddedResource Include="Data\TestData\Universal\AnalyticsShareSections.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\TestData\Release\NewsAnalyticsProduct.json" />
+    <EmbeddedResource Include="Data\TestData\Release\NewsAnalyticsFields.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebDistributionWithAddons.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebAddonSubscriptionWithSession.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebDistributionWithCJLandCSP.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebDistributionWithCAP.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\PRWebDistributionWithoutCAP.json" />
+    <None Include="Data\TestData\Internal\PRWebDistributionWithMultipleIdl.json" />
+    <None Include="Data\TestData\Internal\PRWebDistributionWithSocialPost.json" />
+    <EmbeddedResource Include="Data\TestData\Release\Feeds.json" />
+    <EmbeddedResource Include="Data\TestData\Release\ForgotPasswordData.json" />
+    <EmbeddedResource Include="Data\TestData\Release\ForgotPasswordRegularData.json" />
+    <EmbeddedResource Include="Data\TestData\Release\ForgotPasswordSameData.json">
+      <LastGenOutput>ForgotPasswordSameData1.feature.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\TestData\Release\LCIDLoginInfo.json" />
+    <EmbeddedResource Include="Data\TestData\Release\AnalyticsSectionBody.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\ZenNewsItemData.json" />
+    <EmbeddedResource Include="Data\TestData\Prod\APIUsers.json" />
+    <None Include="Data\TestData\Release\Outlets.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistributionIdWithoutSendToIris.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistributionIdWithSendToIris.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistributionPublished30plusDaysAgo.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistributionPublished60PlusDaysAgoOnHold30PlusDaysAfterPublish.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebAddonSubscriptionWithSession.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistributionWithCJLandCSP.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistributionWithAddons.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistributionWithCAP.json" />
+    <EmbeddedResource Include="Data\TestData\Universal\ImportSample.csv" />
+    <EmbeddedResource Include="Data\TestData\Universal\ImportSampleList.csv" />
+    <None Include="Data\TestData\Release\PRWebDistributionWithMultipleIdl.json" />
+    <EmbeddedResource Include="Data\TestData\Release\PRWebDistributionWithoutCAP.json" />
+    <None Include="Data\TestData\Release\PRWebDistributionWithSocialPost.json" />
+    <EmbeddedResource Include="Data\TestData\Universal\EmailMergeFieldsContacts.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\TestData\Universal\EmailMergeFieldsOutlets.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\TestData\Universal\EmailMergeFieldsContactsOutlets.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\TestData\Release\ZenNewsItemData.json" />
+    <EmbeddedResource Include="Data\TestData\Internal\CompanyIdXAPIKEYHeader.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Features\ACLS\ACLS_Insights.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ACLS_Insights.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\ACLS\ACLS_Settings.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ACLS_Settings.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Activities\Grid\MyActivitiesGrid.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MyActivitiesGrid.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Activities\NewActivity\CustomActivity.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CustomActivity.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Activities\PRWeb\DistributionPrivilege.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DistributionPrivilege.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Activities\Export\ExportActivities.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ExportActivities.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Activities\PRWeb\PreviewActions.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PreviewActions.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Activities\PRWeb\PRWebDistribution.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PRWebDistribution.feature.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Data\TestData\Internal\Distributions.json" />
+    <None Include="Features\Activities\PRWeb\PRWebDistribution2.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PRWebDistribution2.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Activities\PRWeb\PRWebSubscription.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PRWebSubscription.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsActivityCountsEndPoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsActivityCountsEndPoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsCompanySentimentScore.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsCompanySentimentScore.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsDMAEndPoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsDMAEndPoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsFilterByTone.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsFilterByTone.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsMentionsMomentumEndPoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsMentionsMomentumEndPoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsOutletsEndPoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsOutletsEndPoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsProminenceAndImpactEndPoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsProminenceAndImpactEndPoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsPublicDashboardsEndPoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsPublicDashboardsEndPoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsEmailReport.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsEmailReport.feature.cs</LastGenOutput>
+    </None>
+    <Compile Include="Features\Analytics\AnalyticsEmailReport.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnalyticsEmailReport.feature</DependentUpon>
+    </Compile>
+    <None Include="Features\Analytics\AnalyticsSearchesEndPoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsSearchesEndPoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsSectionWidgetTemplates.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsSectionWidgetTemplates.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsShareUrl.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsShareUrl.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsSorting.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsSorting.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Analytics\AnalyticsViewEndPoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AnalyticsViewEndPoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Campaigns\Campaigns.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Campaigns.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Common\ChurnZero.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ChurnZero.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Common\ContactSupport.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ContactSupport.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Common\DataGroup.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DataGroup.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Common\DataViewFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DataViewFeature.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Common\EditorialSupport.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EditorialSupport.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Common\ExportTemplate.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ExportTemplate.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Common\Geo.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Geo.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Common\Grid.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Grid.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Common\Language.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Language.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Common\MediaResearchRequest.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MediaResearchRequest.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Email\EmailDistributionWizard.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EmailDistributionWizard.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Email\EmailSentDetailsReports.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EmailSentDetailsReports.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Feeds\Feeds.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Feeds.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\FileUpload\FileUpload.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FileUpload.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Impact\EarnedAnalytics.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EarnedAnalytics.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Impact\EarnedMedia.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EarnedMedia.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Impact\ImpactAnalytics.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ImpactAnalytics.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Impact\ImpactPressReleases.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ImpactPressReleases.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Impact\IntegrationEarnedMedia.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>IntegrationEarnedMedia.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Impact\IntegrationImpactReleases.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>IntegrationImpactReleases.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\Contacts\ContactProfile.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ContactProfile.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\Contacts\InfluencerTweets.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>InfluencerTweets.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\Contacts\ContactSearchResultsFiltering.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ContactSearchResultsFiltering.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Insights\Insights.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Insights.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\Contacts\ContactsEndpoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ContactsEndpoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\Contacts\EditContact.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EditContact.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\Contacts\InstagramStream.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>InstagramStream.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\Contacts\AddContact.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddContact.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\DMA\DmaEndpoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DmaEndpoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\EdCal\EdCalsEndpoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EdCalsEndpoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\EdCal\ExportEdCals.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ExportEdCals.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\Outlet\OutletConversions.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>OutletConversions.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\Outlet\OutletSearchResultsFiltering.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>OutletSearchResultsFiltering.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\Updates\UpdatesEndpoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>UpdatesEndpoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Company\Company.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Company.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Messages\Activities.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Activities.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Messages\Messages.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Messages.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Media\Outlet\OutletsEndpoint.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>OutletsEndpoint.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsAlerts.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsAlerts.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsAnalytics.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsAnalytics.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsArchive.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsArchive.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsCedrom.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsCedrom.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsClipBook.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsClipBook.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsCustomFields.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsCustomFields.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsForwards.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsForwards.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsOutlets.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsOutlets.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsReport.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsReport.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsResultsFilter.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsResultsFilter.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsSavedSearches.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsSavedSearches.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsSearch.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsSearch.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsSmartTags.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsSmartTags.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsTags.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsTags.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsTVEyes.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsTVEyes.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsView.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsView.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Email\EmailDetails.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EmailDetails.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Common\Login.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Login.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\ACLS\ACLS_News.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ACLS_News.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsTemplates.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsTemplates.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Permissions\News\NewsReadOnlyUser.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsReadOnlyUser.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\PrNewswire\Distribution.VisibilityReportsUrl.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Distribution.VisibilityReportsUrl.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Security\BearerToken.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>BearerToken.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Settings\AlertManagement\AlertManagement.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AlertManagement.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Settings\AutomatedNewsOutput\AutomatedNewsOutput.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AutomatedNewsOutput.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Settings\CustomFields\CustomFields.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CustomFields1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Settings\FormManagement\FormManagement.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FormManagement.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Settings\KeywordSearches\KeywordSearches.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>KeywordSearches.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Settings\SmartTags\SmartTags.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SmartTags.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Settings\WireDistribution\WireDistribution.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>WireDistribution.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\SocialMedia\Pinterest.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Pinterest.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Streams\Streams.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Streams.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Settings\UserManagement\UserManagement.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>UserManagement.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Support\SupportTranslations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SupportTranslations.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\UserParameters\UserParameters.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>UserParameters.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\News\NewsEditAdvancedAnalytics.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NewsEditAdvancedAnalytics.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\TestData\Universal\FormattedDocxTextExp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\TestData\Universal\FormattedDocTextExp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\TestData\Universal\IlluminaHtmlTemplate.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions />
+  <Import Project="$(SolutionDir)\packages\SpecFlow.2.3.2\build\SpecFlow.targets" Condition="Exists('$(SolutionDir)\packages\SpecFlow.2.3.2\build\SpecFlow.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\packages\SpecFlow.2.3.2\build\SpecFlow.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\packages\SpecFlow.2.3.2\build\SpecFlow.targets'))" />
+    <Error Condition="!Exists('..\packages\NUnit.3.10.1\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.10.1\build\NUnit.props'))" />
+    <Error Condition="!Exists('..\packages\NUnit3TestAdapter.3.13.0\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.3.13.0\build\net35\NUnit3TestAdapter.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,19 @@
+﻿{
+  "AdvancedBooleanSearchId": "5b64c4b842dbce097c848100",
+  "CompanyId": "511261",
+  "Countries": "6252001",
+  "DataGroupId": "9939",
+  "defaultDataGroupSearchId": "5977a264d2501c06304fa3ad",
+  "DeleteNonUserCreatedSearchEarnedMediaId": "5c17fd2242dbce3dab9f5425",
+  "DeleteNonUserCreatedSearchSupportId": "5978e3e7d2501c06304fa3c2",
+  "EarnedMediaDefaultDataGroupSearchId": "5bb3f6bc42dbce097c8cd63a",
+  "EarnedMediaDataGroup2DataGroupSearchId": "5bb3f84242dbce097c8cd63b",
+  "KeywordsText1": "icecream",
+  "KeywordsText2": "cake",
+  "Languages": "en",
+  "LimitKeywordsText1": "America",
+  "LimitKeywordsText2": "Trump",
+  "otroDataGroupSearchId": "5977a2c2d2501c06304fa3ae",
+  "RegularSearchId": "5b58a27d42dbce097c847f99",
+  "TestSearchWindow": "30"
+}

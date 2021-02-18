@@ -1,0 +1,158 @@
+﻿[
+  {
+    "Label": "_Outlet ExternalID",
+    "Value": "{{MediaOutletExternalID}}"
+  },
+  {
+    "Label": "_Outlet Pref. Delivery Type",
+    "Value": "{{MediaOutletPreferredDeliveryType}}"
+  },
+  {
+    "Label": "_Outlet Source",
+    "Value": "{{MediaOutletSource}}"
+  },
+  {
+    "Label": "Outlet Address Line 1",
+    "Value": "{{MediaOutletAddressLine1}}"
+  },
+  {
+    "Label": "Outlet Address Line 2",
+    "Value": "{{MediaOutletAddressLine2}}"
+  },
+  {
+    "Label": "Outlet Address Line 3",
+    "Value": "{{MediaOutletCityStateZip}}"
+  },
+  {
+    "Label": "Outlet Call Letters",
+    "Value": "{{MediaOutletCallLetters}}"
+  },
+  {
+    "Label": "Outlet Circulation Audience",
+    "Value": "{{MediaOutletCirculation}}"
+  },
+  {
+    "Label": "Outlet City",
+    "Value": "{{MediaOutletCity}}"
+  },
+  {
+    "Label": "Outlet Country",
+    "Value": "{{MediaOutletCountry}}"
+  },
+  {
+    "Label": "Outlet Created By",
+    "Value": "{{MediaOutletEnteredBy}}"
+  },
+  {
+    "Label": "Outlet Creation Date",
+    "Value": "{{MediaOutletCreationDate}}"
+  },
+  {
+    "Label": "Outlet DMA",
+    "Value": "{{DMAName}}"
+  },
+  {
+    "Label": "Outlet DMA Rank",
+    "Value": "{{DMARank}}"
+  },
+  {
+    "Label": "Outlet E-mail",
+    "Value": "{{MediaOutletEMail}}"
+  },
+  {
+    "Label": "Outlet Facebook Profile",
+    "Value": "{{MediaOutletFacebookUrl}}"
+  },
+  {
+    "Label": "Outlet Fax Number",
+    "Value": "{{MediaOutletFax}}"
+  },
+  {
+    "Label": "Outlet Frequency",
+    "Value": "{{MediaOutletFrequencyName}}"
+  },
+  {
+    "Label": "Outlet Full Name",
+    "Value": "{{MediaOutletFullName}}"
+  },
+  {
+    "Label": "Outlet HQ",
+    "Value": "{{MediaOutletHQ}}"
+  },
+  {
+    "Label": "Outlet Last Modified By",
+    "Value": "{{MediaOutletModifiedBy}}"
+  },
+  {
+    "Label": "Outlet Last Modified Date",
+    "Value": "{{MediaOutletModifiedDate}}"
+  },
+  {
+    "Label": "Outlet List",
+    "Value": "{{MediaOutletListText}}"
+  },
+  {
+    "Label": "Outlet Medium",
+    "Value": "{{MediaOutletMedium}}"
+  },
+  {
+    "Label": "Outlet Name",
+    "Value": "{{MediaOutletName}}"
+  },
+  {
+    "Label": "Outlet Network",
+    "Value": "{{MediaOutletNetwork}}"
+  },
+  {
+    "Label": "Outlet Regional Focus",
+    "Value": "{{MediaOutletRegionalFocusName}}"
+  },
+  {
+    "Label": "Outlet Notes",
+    "Value": "{{MediaOutletNote}}"
+  },
+  {
+    "Label": "Outlet Phone Number",
+    "Value": "{{MediaOutletPhone}}"
+  },
+  {
+    "Label": "Outlet Pref. Delivery Method",
+    "Value": "{{MediaOutletPreferredDeliveryMethod}}"
+  },
+  {
+    "Label": "Outlet Profile",
+    "Value": "{{MediaOutletProfile}}"
+  },
+  {
+    "Label": "Outlet State",
+    "Value": "{{MediaOutletState}}"
+  },
+  {
+    "Label": "Outlet Station Format",
+    "Value": "{{MediaOutletStationFormat}}"
+  },
+  {
+    "Label": "Outlet Subjects",
+    "Value": "{{SubjectCodeDescription}}"
+  },
+  {
+    "Label": "Outlet Twitter Handle",
+    "Value": "{{MediaOutletTwitterUsername}}"
+  },
+  {
+    "Label": "Outlet Type",
+    "Value": "{{MediaOutletTypeName}}"
+  },
+  {
+    "Label": "Outlet Website",
+    "Value": "{{MediaOutletWebsite}}"
+  },
+  {
+    "Label": "Outlet Working Languages",
+    "Value": "{{MediaOutletWorkingLanguages}}"
+  },
+  {
+    "Label": "Outlet ZIP",
+    "Value": "{{MediaOutletZipCode}}"
+  }
+]

@@ -1,0 +1,46 @@
+﻿[
+  {
+    "Label": "Full Name",
+    "Value": "{{FullName}}"
+  },
+  {
+    "Label": "Organization",
+    "Value": "{{Organization}}"
+  },
+  {
+    "Label": "Address Line 1",
+    "Value": "{{AddressLine1}}"
+  },
+  {
+    "Label": "Address Line 2",
+    "Value": "{{AddressLine2}}"
+  },
+  {
+    "Label": "City",
+    "Value": "{{City}}"
+  },
+  {
+    "Label": "State",
+    "Value": "{{State}}"
+  },
+  {
+    "Label": "Zip",
+    "Value": "{{Zip}}"
+  },
+  {
+    "Label": "Country",
+    "Value": "{{Country}}"
+  },
+  {
+    "Label": "Phone",
+    "Value": "{{Phone}}"
+  },
+  {
+    "Label": "Email",
+    "Value": "{{Email}}"
+  },
+  {
+    "Label": "Fax",
+    "Value": "{{Fax}}"
+  }
+]

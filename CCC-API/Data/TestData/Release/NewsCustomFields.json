@@ -1,0 +1,64 @@
+﻿[
+  {
+      "Id": 4811,
+      "Name": "UDF 1",
+      "Edition": "Text UDF",
+      "Type": "String"
+  },
+  {
+      "Id": 4812,
+      "Name": "UDF 2",
+      "Edition": "Validated Text UDF",
+      "Type": "String",
+      "AllowedValues": [
+          {
+              "Id": 4869,
+              "Value": "List 1"
+          }
+      ]
+  },
+  {
+      "Id": 4813,
+      "Name": "UDF 3",
+      "Edition": "Multi Select UDF",
+      "Type": "String",
+      "AllowedValues": [
+          {
+              "Id": 4870,
+              "Value": "List 1"
+          },
+          {
+              "Id": 4871,
+              "Value": "List 2"
+          },
+          {
+              "Id": 4872,
+              "Value": "List 3"
+          }
+      ]
+  },
+  {
+      "Id": 4815,
+      "Name": "UDF 5",
+      "Edition": "Bool UDF",
+      "Type": "Boolean"
+  },
+  {
+      "Id": 4816,
+      "Name": "UDF 6",
+      "Edition": "Decimal UDF",
+      "Type": "Decimal"
+  },
+  {
+      "Id": 4817,
+      "Name": "UDF 7",
+      "Edition": "Date UDF",
+      "Type": "Date"
+  },
+  {
+      "Id": 5372,
+      "Name": "Shannon Memo",
+      "Edition": "Memo UDF",
+      "Type": "String"
+  }
+]

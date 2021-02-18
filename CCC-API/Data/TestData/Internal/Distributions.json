@@ -1,0 +1,315 @@
+﻿[
+  {
+	"PageSize": 50,
+	"Offset": 0,
+	"TotalCount": 3,
+    "ItemCount": 3,
+    "DistId": 196164,
+    "Type": "contacts",
+	"Items": [{
+		"EntityId": 7270778,
+		"Type": 0,
+		"Name": "Nacho Ignacio Martin Flores",
+		"EmailAddress": null,
+		"Info1": "Mr.",
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": {
+			"Details": "media/contacts/{EntityId}",
+			"ParentDetails": null
+		}
+	}, {
+		"EntityId": 7193003,
+		"Type": 0,
+		"Name": "Oleh Oleh Ilnytskyi",
+		"EmailAddress": null,
+		"Info1": "Title",
+		"Info2": "Test",
+		"ParentEntityId": 2961522,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": {
+			"Details": "media/contacts/{EntityId}",
+			"ParentDetails": "media/outlets/{ParentEntityId}"
+		}
+	}, {
+		"EntityId": 7270593,
+		"Type": 0,
+		"Name": "Ignacio MartinFlores",
+		"EmailAddress": null,
+		"Info1": "",
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": {
+			"Details": "media/contacts/{EntityId}",
+			"ParentDetails": null
+		}
+	}],
+	"_links": {
+		"prev": null,
+		"next": null
+	},
+	"_meta": {}
+
+},
+  {
+	"PageSize": 50,
+	"Offset": 0,
+	"TotalCount": 5,
+    "ItemCount": 5,
+     "DistId": 196164,
+    "Type": "outlets",
+	"Items": [{
+		"EntityId": 2888177,
+		"Type": 0,
+		"Name": "The Morning Advertiser - Online",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": {
+			"Details": "media/outlets/{EntityId}",
+			"ParentDetails": null
+		}
+	}, {
+		"EntityId": 3002583,
+		"Type": 0,
+		"Name": "Nacho Test Outlet",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": {
+			"Details": "media/outlets/{EntityId}",
+			"ParentDetails": null
+		}
+	}, {
+		"EntityId": 3002614,
+		"Type": 0,
+		"Name": "Nacho Test Outlet",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": {
+			"Details": "media/outlets/{EntityId}",
+			"ParentDetails": null
+		}
+	}, {
+		"EntityId": 2366472,
+		"Type": 0,
+		"Name": "onLine",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": {
+			"Details": "media/outlets/{EntityId}",
+			"ParentDetails": null
+		}
+	}, {
+		"EntityId": 2888331,
+		"Type": 0,
+		"Name": "TradeWinds - tradewindsnews.com",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": {
+			"Details": "media/outlets/{EntityId}",
+			"ParentDetails": null
+		}
+	}],
+	"_links": {
+		"prev": null,
+		"next": null
+	},
+	"_meta": {}
+
+},
+  {
+	"PageSize": 50,
+	"Offset": 0,
+	"TotalCount": 3,
+    "ItemCount": 3,
+     "DistId": 196164,
+    "Type": "individuals",
+	"Items": [{
+		"EntityId": 700868,
+		"Type": 0,
+		"Name": "Ignacio Flores",
+		"EmailAddress": "",
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}, {
+		"EntityId": 701237,
+		"Type": 0,
+		"Name": "Mr Ignacio Test Martin Flores",
+		"EmailAddress": "ignacio.flores@cision.com",
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}, {
+		"EntityId": 690217,
+		"Type": 0,
+		"Name": "Individual One",
+		"EmailAddress": "rajath.chandrashekar@cision.com",
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": true,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}],
+	"_links": {
+		"prev": null,
+		"next": null
+	},
+	"_meta": {}
+
+},
+  {
+	"PageSize": 50,
+	"Offset": 0,
+	"TotalCount": 6,
+    "ItemCount": 6,
+     "DistId": 196164,
+    "Type": "organizations",
+	"Items": [{
+		"EntityId": 6054,
+		"Type": 0,
+		"Name": "APIOrganization",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": true,
+		"HasClickedLink": true,
+		"ClickedLinks": [{
+			"Href": "http://www.google.com",
+			"Name": "www.google.com",
+			"ClickCount": 1
+		}, {
+			"Href": "http://www.cision.com",
+			"Name": "www.cision.com",
+			"ClickCount": 1
+		}],
+		"_links": null
+	}, {
+		"EntityId": 6056,
+		"Type": 0,
+		"Name": "Nacho Organization",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}, {
+		"EntityId": 6050,
+		"Type": 0,
+		"Name": "oleh org",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}, {
+		"EntityId": 6034,
+		"Type": 0,
+		"Name": "OrganizationPublisher1",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}, {
+		"EntityId": 6043,
+		"Type": 0,
+		"Name": "samarorg",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}, {
+		"EntityId": 6026,
+		"Type": 0,
+		"Name": "Testing organization #2",
+		"EmailAddress": null,
+		"Info1": null,
+		"Info2": null,
+		"ParentEntityId": null,
+		"Avatar": null,
+		"HasOpened": false,
+		"HasClickedLink": false,
+		"ClickedLinks": null,
+		"_links": null
+	}],
+	"_links": {
+		"prev": null,
+		"next": null
+	},
+	"_meta": {}
+
+}
+]
