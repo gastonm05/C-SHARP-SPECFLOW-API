@@ -1,0 +1,73 @@
+﻿{
+    "PRWebDistributionData": {
+        "SubscriptionId": "0",
+        "DistributionName": "API Test Distribution",
+        "Headline": "Now, this is a story all about how My life got flipped-turned upside down",
+        "Summary": "And I would like to take a minute Just sit right there and think what to say to get more that 80 chars.",
+        "Body": "In west Philadelphia born and raised On the playground was where I spent most of my days Chillin out maxin relaxin all cool And all shootin some b-ball outside of the school When a couple of guys who were up to no good Started making trouble in my neighborhood I got in one little fight and my mom got scared She said Youre movin with your auntie and uncle in Bel Air",
+        "ReleaseDateTimezone": "Central Standard Time",
+        "ReleaseDate": "",
+        "CompanyWebsite": "www.testwebsite.com",
+        "Cities": [
+            {
+                "Id": "720",
+                "Name": "Baltimore,MD"
+            }
+        ],
+        "User": "integrationTest",
+        "UserPhone": "+1(54)1234567",
+        "UserEmail": "test@testmail.com",
+        "Topics": [
+            {
+                "Id": "13",
+                "Name": "Arts & Entertainment"
+            }
+        ],
+        "MediaDigests": [ "HealthAndMedical", "TravelAndHospitality" ],
+        "ContactName": "contactName",
+        "ContactPhone": "7081231234",
+        "ContactEmail": "contactEmail@contactEmail.com",
+        "ContactCompany": "contactCompany",
+        "ContactWebsite": "www.contactCompanyWebsite.com",
+        "NewsImage": {
+            "AssetId": "",
+            "FileName": "",
+            "FileSize": "",
+            "FilePath": ""
+        },
+        "VideoURL": "",
+        "CityState": "Seattle, WA",
+        "IndustryOutletCategories": [],
+        "IsCreatedInC3": "true",
+        "URLKeyword1": "3013",
+        "URLKeyword2": "11",
+        "AdditionalContactName": "AdditionalContactName",
+        "AdditionalContactCompany": "AdditionalContactCompany",
+        "AdditionalContactWebsite": "www.AdditionalContactWebsite.com",
+        "AdditionalContactPhone": "7081231234",
+        "AdditionalContactEmail": "AdditionalContactEmail@email.com",
+        "SocialMediaAccounts": [
+            {
+                "type": "Twitter",
+                "accountName": "macbuoy",
+                "avatar": "https://pbs.twimg.com/profile_images/378800000315859181/0d5122df3abb46860877379c01841d30_normal.jpeg",
+                "selected": true,
+                "connected": true
+            },
+            {
+                "type": "FacebookFanPage",
+                "accountName": "macbuoy",
+                "avatar": "https://pbs.twimg.com/profile_images/378800000315859181/0d5122df3abb46860877379c01841d30_normal.jpeg",
+                "selected": true,
+                "connected": true
+            },
+            {
+                "type": "LinkedInCompany",
+                "accountName": "macbuoy",
+                "avatar": "https://pbs.twimg.com/profile_images/378800000315859181/0d5122df3abb46860877379c01841d30_normal.jpeg",
+                "selected": true,
+                "connected": true
+            }
+        ]
+    }
+}

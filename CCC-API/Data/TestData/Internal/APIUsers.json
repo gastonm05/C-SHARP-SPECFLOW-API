@@ -1,0 +1,997 @@
+﻿[
+  {
+    "CompanyEdition": "basic",
+    "CompanyId": "ElyShakeDownAutomation",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany5",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany4",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany2",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany6",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany7",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany8",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany9",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb10",
+    "CompanyId": "PRWebElysiumCompany10",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany11",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany12",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany13",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "PRWebElysiumCompany4",
+    "CompanyId": "PRWebElysiumCompany4",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany14",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb with RetireEcomOptions2017 enabled",
+    "CompanyId": "PRWebElysiumCompany15",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb with RetireEcomOptions2017 enabled",
+    "CompanyId": "PRWebElysiumCompany16",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb with RetireEcomOptions2017 enabled",
+    "CompanyId": "PRWebElysiumCompany17",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb with RetireEcomOptions2017 enabled",
+    "CompanyId": "PRWebElysiumCompany18",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb with RetireEcomOptions2017 enabled",
+    "CompanyId": "PRWebElysiumCompany19",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb with RetireEcomOptions2017 enabled",
+    "CompanyId": "PRWebElysiumCompany20",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb21",
+    "CompanyId": "PRWebElysiumCompany21",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany22",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany23",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany24",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany25",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany26",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb",
+    "CompanyId": "PRWebElysiumCompany27",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "analytics manager",
+    "CompanyId": "gnus3",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "(Default)"
+  },
+  {
+    "CompanyEdition": "Analytics company with features enabled and dynamic news",
+    "CompanyId": "testerissimo",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "analytics user",
+    "CompanyId": "gnus3",
+    "Username": "analytics2",
+    "Password": "1",
+    "DataGroup": "(Default)"
+  },
+  {
+    "CompanyEdition": "readOnly1418",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "readonly1418",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "ESAManager",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "(Default)"
+  },
+  {
+    "CompanyEdition": "CCC1481",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "CCC1481",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Publishers standard shared user",
+    "CompanyId": "elenterprise1",
+    "Username": "auto",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Publishers manager user",
+    "CompanyId": "elenterprise1",
+    "Username": "manager",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Publishers admin user",
+    "CompanyId": "elenterprise1",
+    "Username": "AdminUser",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Publishers readonly user",
+    "CompanyId": "elenterprise1",
+    "Username": "ReadOnlyUser",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "C3 with OMC email user",
+    "CompanyId": "Churnzerocompany",
+    "Username": "manager",
+    "Password": "33"
+  },
+  {
+    "CompanyEdition": "Manager Standard User",
+    "CompanyId": "PositiveTest",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Standard User",
+    "CompanyId": "PositiveTest",
+    "Username": "standarUser22",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "PRWebOnHoldReasonsTest",
+    "CompanyId": "PRWebOnHoldReasonsTest",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Standard User",
+    "CompanyId": "PositiveTest",
+    "Username": "standarUser23",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Standard User",
+    "CompanyId": "PositiveTest",
+    "Username": "standarUser24",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Standard User with default DG",
+    "CompanyId": "PositiveTest",
+    "Username": "standardUser25",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "TheParrotHasPRWebAccess",
+    "CompanyId": "TheParrotHasPRWebAccess",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "socialmedia User",
+    "CompanyId": "SocialPandasAutomation",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "getDistributionIdl",
+    "CompanyId": "getDistributionIdl",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "PRWebIdlAddonsAccount",
+    "CompanyId": "PRWebIdlAddonsAccount",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyId": "cacampaign",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "",
+    "CompanyEdition": "Manager user Campaign-Enabled company"
+  },
+  {
+    "CompanyId": "cacampaign",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "(Default)",
+    "CompanyEdition": "Manager, Campaign-Enabled company, Default, Ownership"
+  },
+  {
+    "CompanyId": "perifery",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "",
+    "CompanyEdition": "Publishers social company, custom fields"
+  },
+  {
+    "CompanyEdition": "Default_DG_1",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "Default_DG_1",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Default_DG_2",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "Default_DG_2",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Default_DG_3",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "Default_DG_3",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Default_DG_4",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "Default_DG_4",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Default_DG_5",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "Default_DG_5",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "social filter",
+    "CompanyId": "duncanCPRE2",
+    "Username": "standardUser",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "PRWebMultipleIdlForReleaseQuantityUsed",
+    "CompanyId": "PRWebMultipleIdlForReleaseQuantityUsed",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "PRWebElysiumCompany1",
+    "CompanyId": "PRWebElysiumCompany1",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "socialmedia User2",
+    "CompanyId": "SocialPandas2",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "socialmedia User3",
+    "CompanyId": "SocialPandas3",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "socialmedia User4",
+    "CompanyId": "SocialPandas4",
+    "Username": "manager",
+    "Password": ""
+  },
+    {
+    "CompanyEdition": "socialmedia User5",
+    "CompanyId": "SocialPandas5",
+    "Username": "manager",
+    "Password": ""
+  },
+    {
+    "CompanyEdition": "socialmedia User6",
+    "CompanyId": "SocialPandas6",
+    "Username": "manager",
+    "Password": ""
+  },
+    {
+    "CompanyEdition": "socialmedia User7",
+    "CompanyId": "SocialPandas7",
+    "Username": "manager",
+    "Password": ""
+  },
+    {
+    "CompanyEdition": "socialmedia User8",
+    "CompanyId": "SocialPandas8",
+    "Username": "manager",
+    "Password": ""
+  },
+    {
+    "CompanyEdition": "socialmedia User9",
+    "CompanyId": "SocialPandas9",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "API Manager User",
+    "CompanyId": "Apiinternal",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "(Default)"
+  },
+  {
+    "CompanyEdition": "API Standard User",
+    "CompanyId": "Apiinternal",
+    "Username": "standardUser",
+    "Password": "test1ng1"
+  },
+  {
+    "CompanyEdition": "API Read-Only User",
+    "CompanyId": "Apiinternal",
+    "Username": "readonlyuser",
+    "Password": "pass1"
+  },
+  {
+    "CompanyEdition": "ACL Manager User",
+    "CompanyId": "acl",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "ACL Standard User",
+    "CompanyId": "acl",
+    "Username": "standard",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "ACL ReadOnly User",
+    "CompanyId": "acl",
+    "Username": "readonly",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "CEDROM",
+    "CompanyId": "HerdDemo3",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "CEDROM"
+  },
+  {
+    "CompanyEdition": "Streams User 1",
+    "CompanyId": "ElyShakedownAutomation",
+    "Username": "001",
+    "Password": "11"
+  },
+  {
+    "CompanyEdition": "Streams User 2",
+    "CompanyId": "ElyShakedownAutomation",
+    "Username": "002",
+    "Password": "22"
+  },
+  {
+    "CompanyEdition": "Streams User 3",
+    "CompanyId": "ElyShakedownAutomation",
+    "Username": "003",
+    "Password": "33"
+  },
+  {
+    "CompanyEdition": "UAC No Access 401",
+    "CompanyId": "SocialPandasautomation",
+    "Username": "NoAccess",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "No OAuth User",
+    "CompanyId": "APInternal",
+    "Username": "APInternal",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Non Streams Manager",
+    "CompanyId": "apinternal",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Instagram OAuthed",
+    "CompanyId": "akprwebely1",
+    "Username": "automationuser",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Data Group User",
+    "CompanyId": "elysiumcompany",
+    "Username": "qaapidatagroupuser",
+    "Password": "pass1"
+  },
+  {
+    "CompanyEdition": "Alert Manager",
+    "CompanyId": "onpointcompanyalert",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Alert Standard User",
+    "CompanyId": "onpointcompanyalert",
+    "Username": "userstandard",
+    "Password": "test"
+  },
+  {
+    "CompanyEdition": "Grid Company",
+    "CompanyId": "gridtestcompany",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "User Management Company",
+    "CompanyId": "UserManagementCompany",
+    "Username": "manager",
+    "Password": "22"
+  },
+  {
+    "CompanyId": "GlobalPortalDev",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "",
+    "CompanyEdition": "distribution user"
+  },
+  {
+    "CompanyEdition": "Visible ON Company",
+    "CompanyId": "visibleon",
+    "DataGroup": "",
+    "Password": "",
+    "Username": "manager"
+  },
+  {
+    "CompanyEdition": "OnpointCompany Manager",
+    "CompanyId": "OnpointCompany",
+    "Password": "",
+    "Username": "manager"
+  },
+  {
+    "CompanyEdition": "Global Portal Off Company",
+    "CompanyId": "GlobalPortalOffCompany",
+    "Password": "",
+    "Username": "manager"
+  },
+  {
+    "CompanyEdition": "Global Portal On Company - Manager User",
+    "CompanyId": "GlobalPortalOnCompany",
+    "Password": "",
+    "Username": "manager"
+  },
+  {
+    "CompanyEdition": "Global Portal On Company - System Admin User",
+    "CompanyId": "GlobalPortalOnCompany",
+    "Password": "33",
+    "Username": "SAUser"
+  },
+  {
+    "CompanyEdition": "news archive manager",
+    "CompanyId": "gnus3",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "(Default)"
+  },
+  {
+    "CompanyEdition": "news archive user",
+    "CompanyId": "gnus3",
+    "Username": "NewsArchiveStandardUser",
+    "Password": "1",
+    "DataGroup": "(Default)"
+  },
+  {
+    "CompanyEdition": "OMC Enabled Company",
+    "CompanyId": "IsOMCCompanyTrue",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "OMC Disabled Company",
+    "CompanyId": "IsOMCCompanyFalse",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "ACL Keyword Automation",
+    "CompanyId": "ACL",
+    "Username": "AutomationKeywordAdmin",
+    "Password": "2"
+  },
+  {
+    "CompanyEdition": "Global Portal On Canadian Language Company - Manager User",
+    "CompanyId": "ACL",
+    "Username": "CanadianAutomationSysadmin",
+    "Password": "33",
+    "Language": "en-ca",
+    "LCID": 4105
+  },
+  {
+    "CompanyEdition": "UserParameter Admin",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "UserParam",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "ESAManager - Custom Fields",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "01 Custom Fields"
+  },
+  {
+    "CompanyEdition": "PRWebSendToIrisAccount",
+    "CompanyId": "PRWebSendToIrisAccount",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "prweb30",
+    "CompanyId": "PRWebElysiumCompany30",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "ESA Standard User with Default DG",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "CCC9038",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Standard User with lists",
+    "CompanyId": "positivetest",
+    "Username": "standardUser40",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "ESA Standard User with Tags",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "CCC9382",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "SMB Package Company",
+    "CompanyId": "smbpackage",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "manager user with lists",
+    "CompanyId": "positivetest",
+    "Username": "managerDefault",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Manager for Outlet Search By Include-Exclude",
+    "CompanyId": "apinternal",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Manager with Default DataGroup",
+    "CompanyId": "elyshakedownautomation",
+    "Username": "managerdefaultdg",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Smart Tag ON Company",
+    "CompanyId": "smartTagOnCompany",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Smart Tag ON Company - Standard User",
+    "CompanyId": "smartTagOnCompany",
+    "Username": "standard",
+    "Password": "33"
+  },
+  {
+    "CompanyEdition": "Smart Tag ON Company - Read-Only User",
+    "CompanyId": "smartTagOnCompany",
+    "Username": "readonly",
+    "Password": "33"
+  },
+  {
+    "CompanyEdition": "Smart Tag ON Company - SysAdmin User",
+    "CompanyId": "smartTagOnCompany",
+    "Username": "sysadmin",
+    "Password": "33"
+  },
+  {
+    "CompanyEdition": "Smart Tag ON Company - AE Manager User",
+    "CompanyId": "smartTagOnCompany",
+    "Username": "ae_",
+    "Password": "33"
+  },
+  {
+    "CompanyEdition": "Orion Syntax User",
+    "CompanyId": "visible2",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "Archive Test"
+  },
+  {
+    "CompanyEdition": "PRWebC3AutomationAddonsForAPI",
+    "CompanyId": "PRWebC3AutomationAddonsForAPI",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Company with huge results setted",
+    "CompanyId": "positivetestautomation1",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Advance Password enabled Company - Sysadmin User",
+    "CompanyId": "advancepwdcompany",
+    "Username": "AutomationSysAdmin",
+    "Password": "Verano2018$"
+  },
+  {
+    "CompanyEdition": "Advance Password enabled Company - Standard User",
+    "CompanyId": "advancepwdcompany",
+    "Username": "AutomationStandard",
+    "Password": "Verano2018$"
+  },
+  {
+    "CompanyEdition": "Advance Password enabled Company - ReadOnly User",
+    "CompanyId": "advancepwdcompany",
+    "Username": "AutomationReadonly",
+    "Password": "Verano2018$"
+  },
+  {
+    "CompanyEdition": "Standard User with default DG",
+    "CompanyId": "PositiveTest",
+    "Username": "standardUser38",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "company with US data segmentation",
+    "CompanyId": "USPositiveTest",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Press Release Impact Enabled Company - Manager",
+    "CompanyId": "ImpactEnabledCompany",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Press Release Impact Enabled Company - Sysadmin",
+    "CompanyId": "ImpactEnabledCompany",
+    "Username": "sysadmin",
+    "Password": "33"
+  },
+  {
+    "CompanyEdition": "Press Release Impact Enabled Company - Standard",
+    "CompanyId": "ImpactEnabledCompany",
+    "Username": "standard",
+    "Password": "33"
+  },
+  {
+    "CompanyEdition": "Press Release Impact Enabled Company - AE",
+    "CompanyId": "ImpactEnabledCompany",
+    "Username": "ae_",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Press Release Impact Enabled Company - ReadOnly",
+    "CompanyId": "ImpactEnabledCompany",
+    "Username": "readonly",
+    "Password": "33"
+  },
+  {
+    "CompanyEdition": "CEDROM Manager",
+    "CompanyId": "HerdDemo3",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "CEDROM"
+  },
+  {
+    "CompanyEdition": "Impact Tab Enabled per DataGroup Company - (Default)",
+    "CompanyId": "ImpactTabDGEnabledCompany",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "(Default)"
+  },
+  {
+    "CompanyEdition": "Impact Tab Enabled per DataGroup Company - DGDisabledforImpact",
+    "CompanyId": "ImpactTabDGEnabledCompany",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "DGDisabledforImpact"
+  },
+  {
+    "CompanyEdition": "Impact Tab Enabled per DataGroup Company - ImpactEnabledDataGroup",
+    "CompanyId": "ImpactTabDGEnabledCompany",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "ImpactEnabledDataGroup"
+  },
+  {
+    "CompanyEdition": "Custom Fields - Manager User",
+    "CompanyId": "CustomFieldcompanyProv",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Basic Edition - Standard User",
+    "CompanyId": "PositiveTestBasic",
+    "Username": "StandardUser1",
+    "Password": "1",
+    "DataGroup": "(Default)"
+  },
+  {
+    "CompanyEdition": "Impact Enabled Company with No Company id or DataGroup id set - Manager",
+    "CompanyId": "ImpactEnabledCompanyNoOMCSSO",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "(Default)"
+  },
+  {
+    "CompanyEdition": "C3ShakedownAutomation Manager",
+    "CompanyId": "C3ShakedownAutomation",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "(Default)"
+  },
+  {
+    "CompanyEdition": "Impact Enabled Company with No Company id or DataGroup id set - Manager - DGLevelAccountID DG Selected",
+    "CompanyId": "ImpactEnabledCompanyNoOMCSSO",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "DGLevelAccountID"
+  },
+  {
+    "CompanyEdition": "Posdemo Manager",
+    "CompanyId": "Posdemo",
+    "Username": "manager",
+    "Password": "",
+	"DataGroup": "(Default)"
+  },
+  {
+    "CompanyEdition": "Impact Enabled Company",
+    "CompanyId": "impactautomationhc",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "(Default)"
+  },
+  {
+    "CompanyEdition": "PRWebElysiumOnlyPublishedReleasesCompany",
+    "CompanyId": "PRWebElysiumOnlyPublishedReleasesCompany",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "PRWebElysiumOnlyScheduledReleasesCompany",
+    "CompanyId": "PRWebElysiumOnlyScheduledReleasesCompany",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "FTP Export Enabled Company - Manager",
+    "CompanyId": "AutoFTPAutomationEnabledCompany",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "FTP Export Enabled Company - AE",
+    "CompanyId": "AutoFTPAutomationEnabledCompany",
+    "Username": "manager_ae",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "FTP Export Enabled Company - Standard User",
+    "CompanyId": "AutoFTPAutomationEnabledCompany",
+    "Username": "standardUser",
+    "Password": "33"
+  },
+  {
+    "CompanyEdition": "FTP Export Enabled Company - Readonly User",
+    "CompanyId": "AutoFTPAutomationEnabledCompany",
+    "Username": "readonlyUser",
+    "Password": "33"
+  },
+  {
+    "CompanyEdition": "FTP Export Enabled Company - SysAdmin User",
+    "CompanyId": "AutoFTPAutomationEnabledCompany",
+    "Username": "sysadminUser",
+    "Password": "33"
+  },
+  {
+    "CompanyEdition": "Social Location Manager",
+    "CompanyId": "AVisibleArovTesting",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "PR News Wire Enabled - Without Wire Distribution Account ID - Manager",
+    "CompanyId": "PRNewsWireEnabled_WithoutWireDistributionAccountID",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "PR News Wire Enabled - Without Wire Distribution Account ID - Standard User",
+    "CompanyId": "PRNewsWireEnabled_WithoutWireDistributionAccountID",
+    "Username": "StandardUser",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "PR News Wire Enabled - Without Wire Distribution Account ID - Read Only",
+    "CompanyId": "PRNewsWireEnabled_WithoutWireDistributionAccountID",
+    "Username": "ReadOnly",
+    "Password": "1"
+  },  
+  {
+    "CompanyEdition": "PR News Wire Enabled - Without Wire Distribution Account ID - AE",
+    "CompanyId": "PRNewsWireEnabled_WithoutWireDistributionAccountID",
+    "Username": "ae_",
+    "Password": "1"
+  },  
+
+  {
+    "CompanyEdition": "Earned Media Enabled Company - Manager",
+    "CompanyId": "EarnedMediaEnabledCompany",
+    "Username": "manager",
+    "Password": ""
+  },  
+  {
+    "CompanyEdition": "Earned Media Enabled Company - Sysadmin",
+    "CompanyId": "EarnedMediaEnabledCompany",
+    "Username": "Sysadmin",
+    "Password": "33"
+  },  
+  {
+    "CompanyEdition": "Earned Media Enabled Company - Standard",
+    "CompanyId": "EarnedMediaEnabledCompany",
+    "Username": "standard",
+    "Password": "33"
+  },  
+  {
+    "CompanyEdition": "Earned Media Enabled Company - ReadOnly",
+    "CompanyId": "EarnedMediaEnabledCompany",
+    "Username": "readonly",
+    "Password": "33"
+  },  
+  {
+    "CompanyEdition": "Earned Media Enabled Company - AE",
+    "CompanyId": "EarnedMediaEnabledCompany",
+    "Username": "ae_",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "ImageIQNavEnabled param True - Manager",
+    "CompanyId": "ImageIQNavEnabled_True",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+    "CompanyEdition": "Visible Indie Manager",
+    "CompanyId": "visibleindie",
+    "Username": "manager",
+    "Password": "",
+    "DataGroup": "CEDROM MM testing"
+  },
+  {
+    "CompanyEdition": "Reconnect User",
+    "CompanyId": "NordicTesteam",
+    "Username": "manager",
+    "Password": ""
+  },
+  {
+	"CompanyEdition": "Analytics Read Only",
+    "CompanyId": "gnus3",
+    "Username": "readonly",
+    "Password": "1"
+  },
+  {
+    "CompanyEdition": "Read Only PositiveTest",
+    "CompanyId": "PositiveTest",
+    "Username": "ReadOnly",
+    "Password": "1",
+    "DataGroup": ""
+  },
+  {
+    "CompanyId": "CisionCloudQA",
+    "Username": "Automation",
+    "Password": "CisionAutomation2017",
+    "CompanyEdition": "CisionCloudQAUser"
+  },
+]

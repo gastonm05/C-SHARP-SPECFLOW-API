@@ -1,0 +1,51 @@
+﻿// https://wiki.qwestcolo.local/display/NEWS/News+On+Demand+Feed+Types
+{
+  "companies": [
+    {
+      "CompanyId": 504033,
+      "Feeds": [
+        {
+          "Name": "LexisNexis",
+          "Id": "085"
+        },
+        {
+          "Name": "Wise",
+          "Id": "086"
+        },
+        {
+          "Name": "Critical Mentions",
+          "Id": "087"
+        }
+      ]
+    },
+    {
+      "CompanyId": 508537,
+      "Feeds": [
+        {
+          "Name": "BoardReaderBlogPostTier1",
+          "Id": "068"
+        },
+        {
+          "Name": "BoardReaderNews",
+          "Id": "074"
+        },
+        {
+          "Name": "BoardReaderForum",
+          "Id": "076"
+        },
+        {
+          "Name": "LexisNexis",
+          "Id": "085"
+        },
+        {
+          "Name": "Wise",
+          "Id": "086"
+        },
+        {
+          "Name": "Critical Mentions",
+          "Id": "087"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+﻿// https://wiki.qwestcolo.local/display/NEWS/News+On+Demand+Feed+Types
+{
+  "companies": [
+    {
+      "CompanyId": 134222,
+      "Feeds": [
+	   {
+          "Name": "VisibleFacebook",
+          "Id": "115"
+        },
+        {
+          "Name": "VisibleYoutube",
+          "Id": "323"
+        }
+		]
+	},
+	    {
+      "CompanyId": 67485,
+      "Feeds": [
+        {
+          "Name": "BoardReaderBlogPostTier1",
+          "Id": "068"
+        },
+        {
+          "Name": "BoardReaderNews",
+          "Id": "074"
+        },
+        {
+          "Name": "Wise",
+          "Id": "086"
+        }
+		]
+	}
+  ]
+}

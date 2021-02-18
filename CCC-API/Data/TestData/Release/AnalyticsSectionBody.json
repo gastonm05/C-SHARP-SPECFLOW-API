@@ -1,0 +1,50 @@
+﻿{
+	"id":0,
+	"name":"This is from an automated test",
+	"isNameTranslatable":false,
+	"sortOrder":0,
+	"systemId":999,
+	"tooltip":"",
+	"isTooltipTranslatable":false,
+	"icon":"",
+	"viewId":4790,
+	"widgets":[
+		{
+			"availableWidgetId":27,
+			"data":null,
+			"id":3894,
+			"isNameTranslatable":false,
+			"name":"Top Outlets",
+			"size":"md",
+			"sortOrder":0,
+			"systemId":0,
+			"widgetOptionValues":[
+				{"availableWidgetOptionId": 12, "availableWidgetOptionValueId": null, "customOptionValue": "12950"}
+			]
+		},
+		{
+			"availableWidgetId":21,
+			"data":null,
+			"id":3890,
+			"isNameTranslatable":false,
+			"name":"All Groups",
+			"size":"md",
+			"sortOrder":0,
+			"systemId":0,
+			"widgetOptionValues":[
+			]
+		},
+		{
+			"availableWidgetId":81,
+			"data":null,
+			"id":3893,
+			"isNameTranslatable":false,
+			"name":"Facebook",
+			"size":"md",
+			"sortOrder":0,
+			"systemId":0,
+			"widgetOptionValues":[
+			]
+		}	
+	]
+}

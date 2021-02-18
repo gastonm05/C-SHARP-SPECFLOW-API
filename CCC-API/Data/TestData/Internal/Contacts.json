@@ -1,0 +1,38 @@
+﻿[
+  {
+    "Type": "Contact with news",
+    "FullName": "Dave Boyer",
+    "SearchName": "Boyer, Dave",
+    "Id": "2775362"
+  },
+  {
+    "Type": "Contact with twitter",
+    "FullName": "Walter Mossberg",
+    "SearchName": "Mossberg, Walter",
+    "Id": "7556385"
+  },
+  {
+    "Type": "Private contact",
+    "FullName": "John McTesterson",
+    "SearchName": "McTesterson, John",
+    "Id": "7270503"
+  },
+  {
+    "Type": "Contact with instagram",
+    "FullName": "Anderson Cooper",
+    "SearchName": "Cooper, Anderson",
+    "Id": "2449491"
+  },
+  {
+    "Type": "Contact with influencer charts",
+    "FullName": "Stephanie Lee Fatta",
+    "SearchName": "Lee Fatta, Stephanie",
+    "Id": "4578470"
+  },
+  {
+    "Type": "contact with activity",
+    "FullName": "Chris Cuomo",
+    "SearchName": "Cuomo, Chris",
+    "Id": "4604960"
+  }    
+]

@@ -1,0 +1,71 @@
+<table bgcolor="#e5e5e5" border="0" cellpadding="0" cellspacing="0" style="width:100% !important; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; margin:0; font-family:Arial, Helvetica, sans-serif;font-weight: normal; padding: 0; margin: 0; text-align:
+left; background-color: #e5e5e5;" width="600">
+<tbody>
+<tr>
+<td align="center" scope="col" valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" id="mainContainer" style="border-collapse:collapse; " width="600">
+<tbody>
+<tr>
+<td align="center" bgcolor="#e5e5e5" style="padding:10px 3px;" valign="top" width="600">
+<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" class="deviceWidth" style="max-width:600px !important; border-collapse:collapse; display:block!important; margin:0 auto !important; clear:both !important; " width="600">
+<tbody>
+<tr>
+<td style="background-color: #E5E5E5;">
+<table border="0" cellpadding="0" cellspacing="0" class="top" style="background-color: #E5E5E5;" width="600">
+<tbody>
+<tr>
+<td align="left" rowspan="2" valign="top" width="25%"><a href="https://www.illumina.com"><img alt="illumina" height="65" src="https://mkt.illumina.com/rs/600-XEX-927/images/illumina-logo-retina.png" width="152" /></a></td>
+<td align="right" style="background-color: #E5E5E5;" valign="top" width="75%"> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left" class="mktEditable" id="heroImage" valign="top"><img alt="Illumina" src="https://mkt.illumina.com/rs/600-XEX-927/images/illumina-pr-newsletter-email-header.jpg" style="display: block; width: 100% !important; height: auto !important;" width="600" /></td>
+</tr>
+<tr>
+<td align="left" class="mktEditable" id="content" style="padding: 20px; font-size: 12px; color: #666666; font-family: arial,helvetica,sans-serif; line-height: 18px; margin-bottom:0;" valign="top" width="600">
+<p style="font-size: 18px; color: #666666; font-family: arial,helvetica,sans-serif; line-height: 22px; margin-top:0;">Headline</p>
+
+<p style="font-size: 14px; color: #666666; font-family: arial,helvetica,sans-serif; line-height: 18px;margin-top:0;">The MiSeq FGx™ Forensic Genomics System is the first fully validated, next-generation sequencing (NGS) solution designed exclusively for forensic genomics. Dedicated library kits, customized instrument control software, and an analytical software package take you from sample-to-answer with streamlined efficiency.</p>
+
+<p style="font-size: 14px; color: #666666; font-family: arial,helvetica,sans-serif; line-height: 18px;">Now you can develop a more thorough, detailed profile from degraded, mixed, and limited DNA samples. Targeted sequencing of forensically relevant STR and SNP loci empowers you to generate leads, even on cold cases. No database hits? No problem. Thanks to the MiSeq FGx System, database dead ends won’t stop you now.</p>
+
+<p style="font-size: 14px; color: #666666; font-family: arial,helvetica,sans-serif; line-height: 18px;">Discover how the MiSeq FGx is transforming forensic DNA analysis.</p>
+</td>
+</tr>
+<tr>
+<td bgcolor="#e5e5e5">
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+<tbody>
+<tr>
+<td align="center" class="bottom" colspan="4" height="21" style="background-color: #E5E5E5;" valign="top"><img alt="spacer" border="0" height="20" src="http://www.illumina.com/emailers/_2014/_assets/spacers/spacer-20.png" width="20" /></td>
+</tr>
+<tr>
+<td align="center" class="bottom" colspan="4" height="10" style="background-color: #E5E5E5;" valign="top">
+<p style="font-family: arial, helvetica, sans-serif; font-weight: normal; font-size: 12px; line-height: 12px; color: #666; margin:0;">Sent by Illumina  |  5200 Illumina Way  |  San Diego, CA, 92122</p>
+</td>
+</tr>
+<tr>
+<td align="center" class="bottom" colspan="4" height="11" style="padding:15px 0; background-color: #E5E5E5;" valign="top"><a class="links" href="http://www.illumina.com/" style="color: #328ED1;text-decoration: none;font-family: arial, helvetica, sans-serif;font-weight: normal;font-size: 12px;line-height: 16px;" target="_blank">www.illumina.com</a></td>
+</tr>
+<tr>
+<td align="center" class="bottom" colspan="4" height="42" style="background-color: #E5E5E5;" valign="top">
+<div id="social-media-icons"><a href="https://twitter.com/illumina"><img height="46" src="http://mkt.illumina.com/rs/600-XEX-927/images/social-media-icon-twitter.png" width="30" /></a><a href="https://www.facebook.com/illuminainc"><img alt="facebook" height="46" src="http://mkt.illumina.com/rs/600-XEX-927/images/social-media-icon-facebook.png" width="30" /></a><a href="https://www.linkedin.com/company/illumina"><img alt="LinkedIn" height="46" src="http://mkt.illumina.com/rs/600-XEX-927/images/social-media-icon-linkedin.png" width="30" /></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>

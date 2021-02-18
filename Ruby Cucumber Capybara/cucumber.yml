@@ -1,4 +1,0 @@
-#default: --no-source --color --profile html_report --format pretty
-#default: --no-source --color --profile html_report --format pretty
-default: features --format html -o reports/report.html --format pretty
-html_report: --format progress --format html --out=log\features_report.html

@@ -1,9 +1,0 @@
-browser: firefox
-screenshot_directory: reports/screenshots
-screenshot_directory_html: screenshots
-base_url: http://localhost:8000/
-env: qa
-time_out: 30
-
-
-
